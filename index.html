@@ -7,6 +7,7 @@
     <title>BYUI Project Portal</title>
 
     <link rel="stylesheet" href="main.css">
+    
 </head>
 <body>
     <header>
@@ -15,7 +16,7 @@
     <section class="assignment">
         <div class="box">
             <h2>Grady Wayne Hodge</h2>
-            <img src="#" alt="Grady, head and shoulders pic, what a handsome devil">
+            <img src="./images/grady-headshot.jpg" alt="Grady, head and shoulders pic, what a handsome devil">
         </div>
         <div class="content">
             <h3>
@@ -30,14 +31,17 @@
             </ul>
         </div>
         <footer class="box">
-            <p>&copy; 
-                <script type="text/javascript">
-                    document.write(new Date().getFullYear());
-                  </script>
+            <p>
+                &copy; <span id="updateYear"></span> 
                 | Grady W. Hodge | Texas | 
-                    <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+                 <a href="https://www.byui.edu/online">BYUI Online Learning</a>
+                 <br>
+                 <span id="updates">Last Updated: <span id="fullDate">  </span> <span id="time"></span></span>
             </p>
+        
         </footer>
+
+        <script src="current-date.js" type="text/javascript"></script>
 
     </section>
 </body>

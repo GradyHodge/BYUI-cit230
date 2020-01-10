@@ -2,11 +2,13 @@ body {
     background: lightblue;
     max-width: 700px;
 }
-/* ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-} */
+
+img {
+    display: float;
+    left: 50px;
+    top: 100px;
+    border-radius: 7px;
+}
 
 li {
     display: block;
@@ -15,7 +17,17 @@ li {
 .box {
     background: yellow;
     border-radius: 7px;
-    height: 50px;
+    height: 80px;
     text-align: center;
     padding: 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 700px;
+    line-height: 1.5;
+}
+#updates {
+    color: red;
 }
