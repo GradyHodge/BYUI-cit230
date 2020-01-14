@@ -1,5 +1,58 @@
-@media only screen and (max-width: 400px) {
-    body {
-        background-color: yellow;
-    }
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+
+body {
+    background: rgb(193, 196, 197);
+    margin-top: 60px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 16px;
+    margin: 70px;    
+}
+
+.assignment div.box {
+    display: inline-block;
+}
+
+.content {
+    font-size: 1.25rem;
+    color: #0f0f8b;
+    margin: 1.5em;
+}
+
+h1 {
+    font-size: 2.75em;
+    font-weight: bold; 
+    
+}
+
+img {
+    border-radius: 7px;
+    box-shadow: 0px 0px 15px rgb(81, 102, 108);
+}
+
+.box {
+    background: lightblue;
+    color: #0f0f8b;
+    max-width: 80%;
+    height: 100%;
+    text-align: center;
+    padding: 1rem;
+/* NEUMORPHISM PRACTICING A NEW STYLE TREND */
+    box-shadow: -12px -12px 12px 0  rgba(228, 239, 243, 0.642),
+    12px 12px 12px 0 rgba(38, 60, 68, 0.519);
+
+}
+
+li {
+   color: rgba(181, 6, 6, 0.786);
+}
+
+footer {
+    position: relative;
+    top: 130px;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 1.25em;
+}
+#updates {
+    color: rgba(181, 6, 6, 0.786);
 }
