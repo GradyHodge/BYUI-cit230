@@ -1,14 +1,36 @@
 @media only screen and (min-width: 32.5em) {
 
+html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 500px;
+    margin: 5% auto;
+    padding: 0;
+    
+}
+
 img {
     float: right;
+    margin-left: 1rem;
 }
 
 .box {
     border-radius: 7px; 
+    box-shadow: 0px 0px 15px rgb(81, 102, 108);
 
 }
 
+.content h2 {
+ font-size: 2.5rem;
+}
+
+.content {
+    font-size: 1.75rem;
+}
 
 
 } /* end of media query */
