@@ -1,7 +1,13 @@
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 649px) {
 
-
-
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+    header h2 {
+        padding: 10px;
+        text-align: center;
+     }
     
 
  } /* end of media query */
