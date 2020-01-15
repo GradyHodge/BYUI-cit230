@@ -9,5 +9,15 @@
         text-align: center;
      }
     
+     .container .box h2 {
+         font-size: 90px;
+         text-align: center;
+         margin: 5px auto;
+     }
+
+     #fitRight {
+         font-size: 60px;
+         padding: 0;
+     }
 
  } /* end of media query */

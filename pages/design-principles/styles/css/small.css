@@ -5,7 +5,7 @@ body {
     padding: 0;
     min-height: 100vh;
     background: #222;
-    min-height: 100vh;
+   
 }
 
 main {
@@ -25,6 +25,9 @@ main {
      margin: 25px 10px 5px 40px;
  }
 
+ header h1 {
+     font-size: 45px;
+ }
  header h2 {
     margin-top: 20px;
  }
@@ -51,7 +54,7 @@ main {
 }
 
 .container .box:nth-child(1) {
-    background: linear-gradient(45deg,#036eb7,#64eaff);
+    background: linear-gradient(45deg,#086d35,#00ff72);
 } 
 
 .container .box:nth-child(2) {
@@ -69,26 +72,42 @@ main {
     font-size: 100px;
     color: #fff;
     z-index: 1;
-    opacity: 0.4;
-    line-height: .75;
+    opacity: 0.7;
+    line-height: .85;
 }
 
 .container .box h3 {
-    margin: 15px 0;
+    margin: 15px 0 0 0;
     padding: 0;
     color: #fff;
-    font-size: 24px;
+    font-size: 44px;
     text-transform: uppercase;
 }
 
 .container .box p {
     margin: 0;
-    padding: 0;
+    padding: 20px 0;
     color: #fff;
     font-size: 18px;
+    
+}
+
+.box p a {
+    color: rgb(248, 249, 250);
+    font-size: 21px;
+    font-weight: bold;
 }
 
 /* content */
+
+.picBox {
+    /* border:1px solid white; */
+    width: 100%;
+    height: 330px;
+    overflow:scroll;
+    margin: 0 auto;
+    border-radius: 20px;
+}
 
 /* Pseudo Element
 
@@ -136,13 +155,14 @@ header, footer {
     color: rgb(235, 230, 230);
     font-size: 18px;
     max-width: 1000px;
-
-    background: linear-gradient(45deg,#086d35,#00ff72);
+    background: linear-gradient(45deg,#036eb7,#64eaff);
     padding: 5px 10px;
     text-align: center;
     overflow: hidden;
     border-radius: 20px;
 }
+
+
 
 
 
