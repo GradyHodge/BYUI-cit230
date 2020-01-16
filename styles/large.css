@@ -4,7 +4,11 @@
     }
 
     .box {
-        box-shadow: 15px 15px 15px rgb(81, 102, 108);
+        box-shadow: 10px 10px 10px rgb(90, 128, 139);
+    }
+
+    .box h1 {
+        margin-top: 9%;
     }
 
 

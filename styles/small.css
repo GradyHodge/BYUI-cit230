@@ -13,7 +13,8 @@ html {
 }
 
 body {
-    background: rgb(193, 196, 197);
+    background: url(../styles/images/header-bg.png)
+        center center no-repeat;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;   
     max-width: 450px;
@@ -47,13 +48,11 @@ img {
 
 .box {
     width: 100%;
-    background: lightblue;
+    background: linear-gradient(45deg,#1792da,#12b65c);
     color: #0f0f8b;
     text-align: center;
     padding: 1rem;
-/* NEUMORPHISM PRACTICING A NEW STYLE TREND
-    box-shadow: -12px -12px 12px 0  rgba(228, 239, 243, 0.642),
-    12px 12px 12px 0 rgba(38, 60, 68, 0.519); */
+    box-shadow: 7px 7px 7px 0 rgba(98, 126, 136, 0.519);
 
 }
 
@@ -72,3 +71,7 @@ footer {
 #updates {
     color: rgba(181, 6, 6, 0.786);
 }
+
+/* NEUMORPHISM PRACTICING A NEW STYLE TREND
+    box-shadow: -12px -12px 12px 0  rgba(228, 239, 243, 0.642),
+    12px 12px 12px 0 rgba(38, 60, 68, 0.519); */
