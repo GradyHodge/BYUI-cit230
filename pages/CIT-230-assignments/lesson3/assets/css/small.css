@@ -1,5 +1,6 @@
-/* sticky header https://codepen.io/MarcRay/pen/vmJBn */
-
+/* Lesson 3 Site Planning Document Website
+sticky header https://codepen.io/MarcRay/pen/vmJBn */
+@import url("https://fonts.googleapis.com/css?family=Lora|Nunito&display=swap");
 .main_h {
   position: fixed;
   top: 0px;
@@ -14,7 +15,7 @@
   opacity: 0;
   top: -100px;
   padding-bottom: 6px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Lora, serif;
 }
 
 .overview {
@@ -23,13 +24,14 @@
   font-size: 40px;
   line-height: 1.8;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: Lora, serif;
 }
 
 footer {
   text-align: center;
   background: rgb(244, 240, 240);
   color: rgb(79, 75, 75);
+  font-family: "Nunito", sans-serif;
 }
 
 .active {
@@ -169,7 +171,7 @@ h1 {
   font-size: 30px;
   line-height: 1.8;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: Lora, serif;
 }
 
 p {
@@ -193,7 +195,7 @@ p {
   padding: 80px 40px 610px 40px;
   min-height: 500px;
   letter-spacing: 2px;
-  font-family: "Montserrat", sans-serif;
+  font-family: Lora, serif;
 }
 .hero h1 {
   font-size: 50px;
