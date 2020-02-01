@@ -1,6 +1,8 @@
 /* Lesson 3 Site Planning Document Website
 sticky header https://codepen.io/MarcRay/pen/vmJBn */
+
 @import url("https://fonts.googleapis.com/css?family=Lora|Nunito&display=swap");
+
 .main_h {
   position: fixed;
   top: 0px;
@@ -8,6 +10,7 @@ sticky header https://codepen.io/MarcRay/pen/vmJBn */
   z-index: 999;
   width: 100%;
   padding-top: 17px;
+  padding-right: 25px;
   background: none;
   overflow: hidden;
   -webkit-transition: all 0.3s;
@@ -15,7 +18,7 @@ sticky header https://codepen.io/MarcRay/pen/vmJBn */
   opacity: 0;
   top: -100px;
   padding-bottom: 6px;
-  font-family: Lora, serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .overview {
@@ -34,12 +37,83 @@ footer {
   font-family: "Nunito", sans-serif;
 }
 
+.learnMore {
+  display: flex;
+}
+
+.learnMore h4 {
+  font-size: 20px;
+}
+
+button {
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+section {
+  background-color: #f9f9f9;
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 16px;
+}
+
+.oomph {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .active {
+  font-weight: bold;
+  background-color: #d1e8e2;
+}
+
+/* SWATCHES */
+
+.swatches {
+}
+
+.colorBox {
+  color: white;
+  font-size: 50px;
+  height: 150px;
+  text-align: center;
+}
+
+.colorBox p {
+  font-size: 50px;
+}
+
+#color1 {
+  background: #2c3531;
+}
+
+#color2 {
+  background: #116466;
+}
+#color3 {
+  background: #d9b08c;
+}
+#color4 {
+  background: #ffcb9a;
+}
+#color5 {
+  background: #d1e8e2;
+}
+
+#loraChar {
+  font-family: "Lora", serif;
+  font-size: 40px;
+}
+
+#nunitoChar {
+  font-family: "Nunito", sans-serif;
+  font-size: 40px;
 }
 
 @media only screen and (max-width: 766px) {
   .main_h {
-    padding-top: 25px;
+    padding-top: 30px;
   }
 }
 
@@ -143,13 +217,13 @@ nav ul a {
   display: block;
 }
 
-.row {
+/* .row {
   width: 100%;
   max-width: 940px;
   margin: 0 auto;
   position: relative;
   padding: 0 2%;
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -158,7 +232,7 @@ nav ul a {
 body {
   color: #595555;
   background: white;
-  font-family: "Cardo", serif;
+  font-family: "Nunito", serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
 }
@@ -180,9 +254,9 @@ p {
   line-height: 2;
 }
 
-.content {
+/* .content {
   padding: 50px 2% 250px;
-}
+} */
 
 .hero {
   position: relative;
