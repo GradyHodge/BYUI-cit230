@@ -60,7 +60,7 @@
         />
         <div>
           <h1>
-            <span>R</span>un<span>G</span>ear <br />
+            <i>R</i>un<i>G</i>ear <br />
             Weather Prep
           </h1>
           <h2>
@@ -100,9 +100,12 @@
       <div class="hero intro">
         <h2>Our Weather App Services</h2>
         <h3>
-          Our community helps you to prepare for a hard run in hard conditions.
+          Our community helps you to prepare <br />
+          for a hard run in hard conditions. <br />
           <br />
-          You're Going Out No Matter What, ya might as well be ready.
+          You're Going Out No Matter What,
+          <br />
+          ya might as well be ready.
         </h3>
         <h2 class="townName">TOWN NAME</h2>
       </div>
@@ -120,38 +123,59 @@
         </div>
 
         <div class="mask">
-          <nav class="hero clearFix">
+          <nav class="hero clearFix" id="weatherBox">
             <button onclick="toggleForecast()" id="cloud">
-              &#9776; Weather Summary
+              &#127780; Weather Summary <span class="triangle"></span>
             </button>
             <ul id="weatherDetails" class="hide">
-              <li>Today: <span id="todaySummary"></span></li>
+              <li><span id="todaySummary"></span></li>
               <li>
-                <a href="#">Products</a>
+                <a href="#">Temperature: <span>-20 &deg;F</span></a>
               </li>
               <li>
-                <a href="#">Location</a>
+                <a href="#">Precipitation: <span>rainy</span></a>
               </li>
               <li>
-                <a href="#">Contact</a>
+                <a href="#">Wind: <span>10 mph</span></a>
               </li>
               <li>
-                <a href="#">Home</a>
+                <a href="#">Cloud: <span>overcast</span></a>
               </li>
               <li>
-                <a href="#">Products</a>
+                <a href="#">Accumulation: <span>2 inches</span></a>
               </li>
             </ul>
           </nav>
         </div>
+        <main>
       </section>
-      <section class="forcast">
+      <section class="forecast">
+        <div class="flex"></div>
         <h2>5 Day Forecast</h2>
+        <div class="day" id="today">date</div>
+        <div class="day" id="today1">date</div>
+        <div class="day" id="today2">date</div>
+        <div class="day" id="today3">date</div>
+        <div class="day" id="today4">date</div>
+        <div class="day" id="today5">date</div>
+        
       </section>
-      <section class="article">3. 5 minute mile in 5 Degree Weather</section>
+      <section class="article">
+        <h2>Article Title </h2>
+        <small>by Author</small>
+        <p id="story-snowShoe">
+          <b> Snow Shoe Running in Blizzard Conditions</b> <br>Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Quae temporibus corrupti
+          commodi expedita, labore dicta soluta perferendis cupiditate officia.
+          Dolorum, minus eum natus possimus fugiat praesentium eaque aperiam
+          temporibus! Alias.
+        </p>
+        <img src="./images/mike-doute-unsplash.jpg" alt="">
+      </section>
       <section class="contact">
         4. Contact Info- local running clubs, outdoor enthusiasts, hobbiests
       </section>
+    </main>
 
       <!-- TODO: FOOTER: display the current date using JavaScript in this format Wednesday, 24 July 2020. -->
       <footer>
