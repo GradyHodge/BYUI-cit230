@@ -10,6 +10,12 @@ function toggleMenu() {
 
 ///////////////////////////////////////////////////////////////////////////
 
+function toggleForecast() {
+  document.getElementById("weatherDetails").classList.toggle("hide");
+}
+
+///////////////////////////////////////////////////////////////////////////
+
 // TODO: weather API
 
 ///////////////////////////////////////////////////////////////////////////
@@ -56,6 +62,44 @@ const today =
   todaysDate.getFullYear();
 
 document.getElementById("today").textContent = today;
+
+///////////////////////////////////////////////////////////////////////////
+
+// WEATHER SUMMARY: Todays Current Date Formatted as Day, Date Month, WITHOUT YEAR
+
+//DAY Full Name Array
+// const dayNames = [
+//   "Sunday",
+//   "Monday",
+//   "Tuesday",
+//   "Wednesday",
+//   "Thursday",
+//   "Friday",
+//   "Saturday"
+// ];
+
+// // Month Full Name Array
+// const months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December"
+// ];
+
+const todaysDate1 = new Date();
+const dayName1 = dayNames[todaysDate.getDay()];
+const monthName1 = months[todaysDate.getMonth()];
+const today1 = dayName + ", " + todaysDate.getDate() + " " + monthName;
+
+document.getElementById("todaySummary").textContent = today1;
 
 ///////////////////////////////////////////////////////////////////////////
 

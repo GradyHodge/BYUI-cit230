@@ -8,39 +8,58 @@
 
 html {
   font-size: 16px;
-  background-color: #fff;
-  color: #2c3531;
-  margin: 1rem;
+  background-color: rgb(247, 241, 241);
+  color: white;
 }
+
+.contentWrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: #242323;
+  margin: auto;
+}
+
+/* TODO: get a white mask on the intro with double background */
+.intro {
+  background-color: #ce1212e9;
+  max-width: 1200px;
+  padding: 10px;
+  color: white;
+}
+
+/* experiment */
+.mask {
+  background-color: #fff;
+  position: relative;
+}
+.hero {
+  background: url(../images/guy-on-beach.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/*original .hero css below*/
 
 header {
   display: flex;
   justify-content: center;
   padding: 1rem;
   text-align: center;
-  max-width: 770px;
+  max-width: 1200px;
   margin-bottom: 0;
+}
 
-  background-color: #6d6262;
-  color: white;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#116466+0,7db9e8+100 */
-  background: #116466; /* Old browsers */
-  background: -moz-linear-gradient(
-    top,
-    #116466 0%,
-    #7db9e8 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    #116466 0%,
-    #7db9e8 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #116466 0%,
-    #7db9e8 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#116466', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+/* end experiment */
+
+.summary {
+  height: 700px;
 }
 
 header img {
@@ -55,19 +74,25 @@ header h1 {
   margin-left: 1rem;
 }
 
-.intro {
-  max-width: 770px;
-  padding: 10px;
+.townName {
+  text-align: center;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-size: 60px;
 }
 
 section {
-  background-color: #116466;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  background-color: #282727;
+  margin: 4px 0;
+
   padding: 10px;
   color: #fff;
   height: 3rem;
-  max-width: 770px;
+  max-width: 1200px;
+}
+
+.forecast {
+  
 }
 /*-----------------------------------------------------------*/
 
@@ -75,56 +100,39 @@ section {
 
 /*-----------------------------------------------------------*/
 nav {
-  font-family: Verdana, sans-serif;
-  max-width: 770px;
-  background-color: #d1e8e2;
-
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d1e8e2+0,7db9e8+100 */
-  background: #d1e8e2; /* Old browsers */
-  background: -moz-linear-gradient(
-    top,
-    #d1e8e2 0%,
-    #7db9e8 100%
-  ); /* FF3.6-15 */
-  background: -webkit-linear-gradient(
-    top,
-    #d1e8e2 0%,
-    #7db9e8 100%
-  ); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(
-    to bottom,
-    #d1e8e2 0%,
-    #7db9e8 100%
-  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1e8e2', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+  font-family: "Nunito", sans-serif;
+  max-width: 1200px;
+  background-color: transparent;
 }
 nav button {
   margin: 0.2rem 2%;
   background-color: transparent;
   border: none;
-  font-size: 1.6rem; /* recommend @44px for easy to mash on a touch screen */
-  color: #116466;
+  font-family: "lora", serif;
+  font-size: 2rem; /* recommend @44px for easy to mash on a touch screen */
+  color: #e7f20d;
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  font-size: 2rem;
 }
 
 nav ul li a {
   display: block;
   padding: 0.8rem 2%;
   text-decoration: none;
-  color: #116466cc;
+  color: #fafafa;
   border-top: 2px solid rgba(0, 0, 0, 0.3);
+  background-color: rgba(3, 3, 3, 0.31);
 }
 
 nav ul.hide {
   display: none;
   border-radius: 50%;
   text-align: center;
-  background-color: red;
 }
 
 .hiddenMenu {
@@ -133,13 +141,17 @@ nav ul.hide {
 
 /* keep the .css selector above the a:hover selector so the active menu item also changes colors */
 nav ul li.active a {
-  background-color: #c4b92133;
+  background-color: #26c4214b;
   color: #fff;
+  font-size: 1.75rem;
 }
 
 nav ul li a:hover {
   background-color: #11646666;
   color: #fff;
+  font-size: 2.2rem;
+  transition: ease-in-out;
+  transform: translate(1%, 0);
 }
 
 /*----------  FOOTER  -------------------------------------------------*/
@@ -149,7 +161,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
-  max-width: 770px;
+  max-width: 1200px;
 }
 
 /***********  CLEAR FIX  ******************************************/

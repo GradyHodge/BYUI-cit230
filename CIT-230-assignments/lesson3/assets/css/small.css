@@ -231,7 +231,7 @@ nav ul a {
 
 body {
   color: #595555;
-  background: white;
+  background: rgb(27, 26, 26);
   font-family: "Nunito", serif;
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
