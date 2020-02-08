@@ -1,0 +1,116 @@
+<!-- LESSON 5 | CIT 230 Preston Town Page -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="”description”"
+      content="RunGear Weather Prep | You're Going Out No Matter What. Our weather app informs you how to dress for a hard run in hard conditions. Come What May, We're Here to Play."
+    />
+    <!-- TODO: make meta description less than 160 characters including spaces -->
+    <title>RunGear</title>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Lora|Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../design-principles/styles/css/normalize.css"
+    />
+    <link rel="stylesheet" href="./css/small.css" />
+    <link rel="stylesheet" href="./css/medium.css" />
+    <link rel="stylesheet" href="./css/large.css" />
+
+    <!-- FAVICON IMAGES -->
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_package_v0.16/apple-touch-icon.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32"
+    href="./favicon_package_v0.16/favicon-32x32.png />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <!-- TODO: HEADER: LOGO, SITE NAME, MOTTO-->
+    <header>
+      <img
+        src="./favicon_package_v0.16/android-chrome-192x192.png"
+        alt="logo of sprinter inside a gear"
+      />
+      <div>
+        <h1>
+          <span>R</span>un<span>G</span>ear <br />
+          Weather Prep
+        </h1>
+        <h2>
+          Come what may,<br />
+          we're here to play
+        </h2>
+      </div>
+    </header>
+    <!-- TODO: NAV BAR: Home, Preston, Soda Springs, Fish Haven, Storm Center, and Gallery-->
+    <nav class="clearFix">
+      <button onclick="toggleMenu()" id="hamburger">&#9776;Menu</button>
+      <ul id="navUl" class="hide">
+        <li class="active">
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Products</a>
+        </li>
+        <li>
+          <a href="#">Location</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Products</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- MAIN: placeholder for 4 content sections, doesn't span entire width of large screen 
+         1-hero image/weather summary, 2- 5 day forecast, 3- article, and 4- the contact information.-->
+    <div class="intro">
+      <h3>
+        Our weather app informs you how best to prepare for a hard run in hard
+        conditions. You're Going Out No Matter What, ya might as well be ready.
+      </h3>
+    </div>
+    <section class="hero">1. hero image and weather summary</section>
+    <section class="forcast">2. 5 Day Forecast</section>
+    <section class="article">3. 5 minute mile in 5 Degree Weather</section>
+    <section class="contact">
+      4. Contact Info- local running clubs, outdoor enthusiasts, hobbiests
+    </section>
+
+    <!-- TODO: FOOTER: display the current date using JavaScript in this format Wednesday, 24 July 2020. -->
+    <footer>
+      <p>Current Date: <span id="today"></span></p>
+      <p>
+        &copy; <span id="updateYear"></span>
+        | Grady W. Hodge | Texas |
+        <a href="https://www.byui.edu/online" target="_blank"
+          >BYUI Online Learning</a
+        >
+        <br />
+        <span id="updates"
+          >Last Updated: <span id="fullDate"> </span> <span id="time"></span
+        ></span>
+      </p>
+    </footer>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

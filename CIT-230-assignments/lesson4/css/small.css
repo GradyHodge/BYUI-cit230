@@ -1,0 +1,159 @@
+/* LESSON 4: PRESTON TOWN CENTER BASIC PAGE LAYOUT */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  background-color: #fff;
+  color: #2c3531;
+  margin: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+  max-width: 770px;
+  margin-bottom: 0;
+
+  background-color: #6d6262;
+  color: white;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#116466+0,7db9e8+100 */
+  background: #116466; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #116466 0%,
+    #7db9e8 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #116466 0%,
+    #7db9e8 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #116466 0%,
+    #7db9e8 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#116466', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+
+header img {
+  width: 90px;
+  height: 90px;
+  /* float: left; */
+  margin: auto 10%;
+  border-radius: 50%;
+}
+
+header h1 {
+  margin-left: 1rem;
+}
+
+.intro {
+  max-width: 770px;
+  padding: 10px;
+}
+
+section {
+  background-color: #116466;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 10px;
+  color: #fff;
+  height: 3rem;
+  max-width: 770px;
+}
+/*-----------------------------------------------------------*/
+/* NAV BAR */
+/*-----------------------------------------------------------*/
+nav {
+  font-family: Verdana, sans-serif;
+  max-width: 770px;
+  background-color: #d1e8e2;
+
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#d1e8e2+0,7db9e8+100 */
+  background: #d1e8e2; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #d1e8e2 0%,
+    #7db9e8 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #d1e8e2 0%,
+    #7db9e8 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #d1e8e2 0%,
+    #7db9e8 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1e8e2', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+}
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem; /* recommend @44px for easy to mash on a touch screen */
+  color: #116466;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 0.8rem 2%;
+  text-decoration: none;
+  color: #116466cc;
+  border-top: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul.hide {
+  display: none;
+  border-radius: 50%;
+  text-align: center;
+  background-color: red;
+}
+
+.hiddenMenu {
+  display: flex;
+}
+
+/* keep the .css selector above the a:hover selector so the active menu item also changes colors */
+nav ul li.active a {
+  background-color: #c4b92133;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: #11646666;
+  color: #fff;
+}
+
+/*-----------------------------------------------------------*/
+
+footer {
+  background-color: #116466;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  max-width: 770px;
+}
+
+/*****************************************************/
+
+.clearFix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
