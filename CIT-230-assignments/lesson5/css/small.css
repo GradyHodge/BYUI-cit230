@@ -209,8 +209,6 @@ nav ul li a {
 
 nav ul.hide {
   display: none;
-  border-radius: 50%;
-  text-align: center;
 }
 
 .hiddenMenu {

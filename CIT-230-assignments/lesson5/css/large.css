@@ -1,12 +1,12 @@
 /* LESSON 5: PRESTON TOWN CENTER */
 
 @media only screen and (min-width: 1200px) {
-  .title {
-    color: red;
-  }
-
   .title h1 {
   }
+
+  /********* Flex Article/Image **************/
+
+  /********* Flex Contact/Image **************/
 
   /*******************************************/
 } /* END MEDIA QUERY*/
