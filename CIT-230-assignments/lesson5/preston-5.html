@@ -21,6 +21,7 @@
       rel="stylesheet"
       href="../design-principles/styles/css/normalize.css"
     />
+    <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/small.css" />
     <link rel="stylesheet" href="./css/medium.css" />
     <link rel="stylesheet" href="./css/large.css" />
@@ -50,27 +51,41 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
   </head>
+
+
+
+
+
+
+
+  
+
   <body>
     <div class="contentWrapper">
       <!-- TODO: HEADER: LOGO, SITE NAME, MOTTO-->
+      
       <header class="hero">
+        <div>
         <img
           src="./favicon_package_v0.16/android-chrome-192x192.png"
           alt="logo of sprinter inside a gear"
         />
-        <div>
+        </div>
+        <div class="title h1Width">
           <h1>
-            <i>R</i>un<i>G</i>ear <br />
+            <i>R</i>un<i>G</i>ear
             Weather Prep
           </h1>
+        </div>
+        <div class=" title h2Width">
           <h2>
-            Come what may,<br />
+            Come what may,
             we're here to play
           </h2>
         </div>
       </header>
       <!-- TODO: NAV BAR: Home, Preston, Soda Springs, Fish Haven, Storm Center, and Gallery-->
-      <div class="mask">
+      <div >
         <nav class="hero clearFix">
           <button onclick="toggleMenu()" id="hamburger">&#9776;Menu</button>
           <ul id="navUl" class="hide">
@@ -109,9 +124,11 @@
         </h3>
         <h2 class="townName">TOWN NAME</h2>
       </div>
+    
       <section class="hero summary">
         <div class="forecast">
-          <div class="days">
+          <!-- Reccommended Apparrel combinations
+            <div class="days">
             <div id="monday"></div>
             <div id="tuesday"></div>
             <div id="wednesday"></div>
@@ -119,48 +136,66 @@
             <div id="friday"></div>
             <div id="saturday"></div>
             <div id="sunday"></div>
+          </div> -->
+        </div>
+        <section class="weather">
+            <nav class="hero clearFix" id="weatherBox">
+              <button onclick="toggleForecast()" id="cloud">
+                &#127780; Weather Summary <span class="triangle"></span>
+              </button>
+              <ul id="weatherDetails" class="hide">
+                <li><span id="todaySummary"></span></li>
+                <li>
+                  <a href="#">Temperature: <span>-20 &deg;F</span></a>
+                </li>
+                <li>
+                  <a href="#">Precipitation: <span>rainy</span></a>
+                </li>
+                <li>
+                  <a href="#">Wind: <span>10 mph</span></a>
+                </li>
+                <li>
+                  <a href="#">Cloud: <span>overcast</span></a>
+                </li>
+                <li>
+                  <a href="#">Accumulation: <span>2 inches</span></a>
+                </li>
+              </ul>
+            </nav>
+        </section>
+          <main>
+        </section>
+        <section class="forecast hero">
+          
+          <h2>5 Day Forecast</h2>
+          <div class="dayBox">
+            <div class="day" id="today0">
+              <p>Tue, date + 0</p>
+              <p>&#127780</p>
+            </div>
+            <div class="day" id="today1">
+              <p>Tue, date + 1</p>
+              <p>&#127780</p>
+            </div>
+            <div class="day" id="today2">
+              <p>Tue, date + 2</p>
+              <p>&#127780</p>
+            </div>
+            <div class="day" id="today3">
+              <p>Tue, date + 3</p>
+              <p>&#127780</p>
+            </div>
+            <div class="day" id="today4">
+              <p>Tue, date + 4</p>
+              <p>&#127780</p>
+            </div>
+            <div class="day" id="today5">
+              <p>Tue, date + 5</p>
+              <p>&#127780</p>
+            </div>
           </div>
-        </div>
-
-        <div class="mask">
-          <nav class="hero clearFix" id="weatherBox">
-            <button onclick="toggleForecast()" id="cloud">
-              &#127780; Weather Summary <span class="triangle"></span>
-            </button>
-            <ul id="weatherDetails" class="hide">
-              <li><span id="todaySummary"></span></li>
-              <li>
-                <a href="#">Temperature: <span>-20 &deg;F</span></a>
-              </li>
-              <li>
-                <a href="#">Precipitation: <span>rainy</span></a>
-              </li>
-              <li>
-                <a href="#">Wind: <span>10 mph</span></a>
-              </li>
-              <li>
-                <a href="#">Cloud: <span>overcast</span></a>
-              </li>
-              <li>
-                <a href="#">Accumulation: <span>2 inches</span></a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <main>
       </section>
-      <section class="forecast">
-        <div class="flex"></div>
-        <h2>5 Day Forecast</h2>
-        <div class="day" id="today0">date</div>
-        <div class="day" id="today1">date</div>
-        <div class="day" id="today2">date</div>
-        <div class="day" id="today3">date</div>
-        <div class="day" id="today4">date</div>
-        <div class="day" id="today5">date</div>
-        
-      </section>
-      <section class="article">
+      <section class="article hero">
         <h2>Article Title </h2>
         <small>by Author</small>
         <p id="story-snowShoe">
@@ -172,20 +207,22 @@
         </p>
         <img src="./images/mike-doute-unsplash.jpg" alt="snow shoeing in the snow next to a creek">
       </section>
-      <section class="contact">
+      <section class="contact hero">
         <h2>Contact Us</h2>
         <div class="contactBox">
           <div id="clubs"><h4>Clubs</h4>
           <p>
+            Submit local photos of events and weather conditions<br><br>
             Email: ouremail@gomail.com<br>
-            Phone: 1-800-chek-temp
+            Phone: 1-800-chek-temp<br>
             www.website.com
           </p>
           </div>
           <div id="parks"><h4>Parks</h4>
             <p>
+              Events, Ground Conditions, Hours <br> <br> 
               Email: ouremail@gomail.com<br>
-              Phone: 1-800-chek-temp
+              Phone: 1-800-chek-temp<br>
               www.website.com
             </p>
           </div>

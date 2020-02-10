@@ -23,13 +23,17 @@ body {
   margin: auto;
 }
 
-/* TODO: get a white mask on the intro with double background */
+.aboveFold {
+  border-radius: 20px;
+}
+
 .intro {
   max-width: 1200px;
   padding: 10px;
   color: white;
   text-align: center;
   font-size: 1.3rem;
+  border-radius: 0 0 20px 20px;
 }
 
 .intro h3 {
@@ -37,13 +41,9 @@ body {
   font-family: "Nunito", san-serif;
   background-color: rgba(27, 27, 27, 0.399);
   padding: 10px 0;
+  border-radius: 20px;
 }
 
-/* experiment */
-.mask {
-  background-color: #fff;
-  position: relative;
-}
 .hero {
   background: url(../images/guy-on-beach.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -61,29 +61,37 @@ body {
 
 header {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
   padding: 1rem;
   text-align: center;
   max-width: 1200px;
-  margin-bottom: 0;
+  border-radius: 20px 20px 0 0;
 }
-
-/* end experiment */
 
 .summary {
   height: 700px;
+  border-radius: 20px;
+  margin-top: 10px;
 }
 
 header img {
   width: 90px;
   height: 90px;
-  /* float: left; */
-  margin: auto 10%;
   border-radius: 50%;
 }
 
-header h1 {
-  margin-left: 1rem;
+.title {
+  flex-basis: 40%;
+}
+
+.h1Width {
+  min-width: 200px;
+}
+
+.h2Width {
+  min-width: 450px;
 }
 
 .townName {
@@ -119,9 +127,13 @@ nav button {
 
 /*********************************************************
 
-*************   Weather Summary button   *****************
+*************   Weather Summary Section   *****************
 
 **********************************************************/
+.weatherSection {
+  border-radius: 20px;
+}
+
 #cloud {
   font-size: 3rem;
   letter-spacing: 4px;
@@ -132,7 +144,7 @@ nav button {
 }
 
 #weatherDetails li a {
-  color: yellow;
+  color: #e7f20d;
 }
 
 #weatherDetails li a span {
@@ -146,9 +158,9 @@ nav button {
 }
 
 .triangle {
-  border-top: 53px solid rgb(178, 211, 16);
-  border-right: 23px solid transparent;
-  border-left: 23px solid transparent;
+  border-top: 22px solid #e7f20d;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
   float: right;
 }
 
@@ -212,73 +224,131 @@ main {
 }
 
 section {
-  background-color: #2c3531;
+  background-color: transparent;
   margin: 4px 0;
   padding: 10px;
   color: #fff;
   max-width: 1200px;
 }
 
-.forecast {
-  display: none;
-}
-
-.flex {
-  display: flex;
-}
-
 .article {
   display: block;
   margin: 1rem 0;
+  background-color: rgba(34, 33, 33, 0.659);
+  border-radius: 20px;
+}
+
+.article h2 {
+  font-size: 40px;
+  color: yellow;
+  margin-bottom: 2px;
 }
 
 .article small {
-  margin-top: 2px;
+  margin-top: 0;
 }
 
 .article p {
   font-size: 1.5rem;
-  padding: 5px;
+  padding: 15px;
+  font-family: "Nunito", sans-serif;
+  background-color: rgba(39, 38, 38, 0.618);
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 0;
 }
 
 .article img {
   width: 100%;
   margin: 0;
+  border-radius: 0 0 20px 20px;
 }
 
 .contact {
-  display: inline-block;
-  width: 100%;
-  height: 300px;
+  background-color: transparent;
+  border-radius: 20px;
 }
+
 .contact h2 {
-  margin: 5px;
+  font-size: 35px;
   text-align: center;
+  margin: 3px auto 10px auto;
+}
+
+.contactBox {
+  display: flex;
+  justify-content: space-between;
 }
 
 .contactBox div {
-  width: 47.75%;
-  background-color: rgba(255, 255, 255, 0.515);
-  margin: 5px;
-  padding: 5px;
+  background-color: rgba(34, 33, 33, 0.687);
+  border-radius: 20px;
+  padding-left: 7px;
   line-height: 25px;
+  flex: 1;
 }
 
 #clubs {
-  float: left;
+  margin: 0 7px;
+  font-family: "Nunito", sans-serif;
+}
+
+#parks {
+  margin: 0 7px;
+  font-family: "Nunito", sans-serif;
 }
 
 .contactBox h4 {
   text-align: center;
+  font-family: "Lora", serif;
 }
 
-#parks {
-  float: right;
+@media only screen and (max-width: 648px) {
+  .forecast {
+    display: none;
+  }
+
+  .contact img {
+    width: 100%;
+    margin: 5px 0;
+    display: none;
+  }
 }
 
-.contact img {
-  width: 100%;
-  margin: 5px 0;
+@media only screen and (min-width: 649px) {
+  .forecast {
+    border-radius: 20px;
+    margin-top: 15px;
+  }
+
+  .dayBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(29, 28, 28, 0.591);
+    margin: 5px;
+    border-radius: 20px;
+  }
+
+  .forecast h2 {
+    font-size: 40px;
+    color: yellow;
+  }
+
+  .day p {
+    padding: 10px 10px 0 10px;
+  }
+
+  .day p:last-child {
+    text-align: center;
+    font-size: 60px;
+    margin: 0;
+  }
+
+  .contact img {
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 20px;
+  }
 }
 
 /*----------  FOOTER  -------------------------------------------------*/
@@ -289,7 +359,8 @@ footer {
   text-align: center;
   padding: 1rem;
   max-width: 1200px;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
+  border-radius: 20px;
 }
 
 /***********  CLEAR FIX  ******************************************/
