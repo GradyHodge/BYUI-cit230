@@ -1,6 +1,12 @@
 // LESSON 5 PRESTON TOWN CENTER
 
-//ALL JS files are rolled into one for performance
+// TODO: POP-UP ALERT BASED ON DATE
+
+var date = new Date();
+var day = date.getDay();
+if (day != 5) {
+  document.getElementById("popup").style.display = "none";
+}
 
 // TODO: nav toggle:display/hide
 

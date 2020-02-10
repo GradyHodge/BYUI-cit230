@@ -53,6 +53,25 @@ body {
   z-index: -1;
 }
 
+/*********************************************
+********** JS POP-UP *************************
+*********************************************/
+
+#popup {
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  width: 60vw;
+  background-color: #fceff4;
+  border-bottom: 1px solid #ff2876;
+  color: #ff2876;
+  padding: 3vw;
+}
+#popup span {
+  float: right;
+  margin-top: -0.5em;
+}
+
 /*
 
 *********   HEADER   ***************************************
