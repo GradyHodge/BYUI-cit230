@@ -340,7 +340,7 @@ section {
   .dayBox {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: rgba(29, 28, 28, 0.591);
     margin: 5px;
     border-radius: 20px;

@@ -1,7 +1,16 @@
 /* LESSON 5: PRESTON TOWN CENTER */
 @media only screen and (min-width: 649px) {
+  .title h1 {
+    color: green;
+  }
+
   .title {
     flex-basis: 30%;
+  }
+
+  .intro h3 {
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   .h1Width {
@@ -16,9 +25,19 @@
     font-size: 20px;
   }
 
-  #navUl nav li {
+  nav #navUl li {
     max-width: 200px;
     margin: 0 23px;
+  }
+
+  #weatherBox {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  #weatherDetails {
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   .contact img {
