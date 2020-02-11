@@ -337,6 +337,11 @@ section {
     margin-top: 15px;
   }
 
+  .forecast h2 {
+    font-size: 40px;
+    color: yellow;
+  }
+
   .dayBox {
     display: flex;
     flex-direction: row;
@@ -344,11 +349,6 @@ section {
     background-color: rgba(29, 28, 28, 0.591);
     margin: 5px;
     border-radius: 20px;
-  }
-
-  .forecast h2 {
-    font-size: 40px;
-    color: yellow;
   }
 
   .day p {
