@@ -1,0 +1,50 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.intro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  font-size: 2rem;
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.intro h1,
+h2 {
+  max-width: 65rem;
+  margin: 3rem auto;
+  margin-bottom: 5rem;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  gap: 2rem;
+  border: 2px solid green;
+  background-color: rgb(28, 25, 25);
+  margin-top: 80rem;
+  padding: 2rem;
+}
+
+/* Blur in CSS
+To make the whole process more visually appealing, 
+the placeholder is blurred in CSS. 
+
+We render the images with a blur at the beginning, 
+so a transition to the sharp one can be achieved:*/
+.container picture img[data-src] {
+  filter: blur(0.4em);
+}
+
+.container picture img {
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+/* This will remove the blur effect within half a second, 
+which looks good enough for the "loading" effect. */

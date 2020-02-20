@@ -1,0 +1,339 @@
+<!-- 
+  LESSON 5 | CIT 230 Preston Town Page 
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="”description”"
+      content="RunGear Weather Prep | You're Going Out No Matter What. Our weather app informs you how to dress for a hard run in hard conditions. Come What May, We're Here to Play."
+    />
+    <!-- TODO: make meta description less than 160 characters including spaces -->
+    <title>RunGear</title>
+
+      <!-- STYLE SHEETS -->
+    <link
+      rel="stylesheet"
+      href="../design-principles/styles/css/normalize.css"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/small.css" />
+    <link rel="stylesheet" href="./css/medium.css" />
+    <link rel="stylesheet" href="./css/large.css" />
+
+    <!-- FAVICON IMAGES -->
+    <link rel="icon" href="favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_package_v0.16/apple-touch-icon.png"
+    />
+    <link
+      rel="icon-32"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_package_v0.16/favicon-32x32.png"
+    />
+
+    <link
+      rel="shortcut-icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+
+
+
+
+
+  <body>
+<!--JAVASCRIPT POP-UP BASED ON DATE-->
+  <div id="popup"><span onclick='document.getElementById("popup").style.display = "none"'> 
+    Close</span>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+  pavilion.</div>
+
+    <div class="contentWrapper">
+<!-- TODO: HEADER: LOGO, SITE NAME, MOTTO-->
+      
+      <header class="hero">
+        <div>
+        <img
+          src="./favicon_package_v0.16/android-chrome-192x192.png"
+          alt="logo of sprinter inside a gear"
+        />
+        </div>
+        <div class="title h1Width">
+          <h1>
+            <i>R</i>un<i>G</i>ear
+            Weather Prep
+          </h1>
+        </div>
+        <div class=" title h2Width">
+          <h2>
+            Come what may,
+            we're here to play
+          </h2>
+        </div>
+      </header>
+<!-- TODO: NAV BAR: Home, Preston, Soda Springs, Fish Haven, Storm Center, and Gallery-->
+      <div >
+        <nav class="hero clearFix">
+          <button onclick="toggleMenu()" id="hamburger">&#9776;Menu</button>
+          <ul id="navUl" class="hide">
+            <li class="active">
+              <a href="./preston-5.html">Home</a>
+            </li>
+            <li>
+              <a href="./pages/preston.html">Preston</a>
+            </li>
+            <li>
+              <a href="./pages/soda-spring.html">Soda Springs</a>
+            </li>
+            <li>
+              <a href="./pages/fish-haven.html">Fish Haven</a>
+            </li>
+            <li>
+              <a href="./pages/storm-center.html">Storm Center</a>
+            </li>
+            <li>
+              <a href="./pages/gallery.html">Gallery</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+<!-- MAIN: placeholder for 4 content sections, doesn't span entire width of large screen 
+         1-hero image/weather summary, 2- 5 day forecast, 3- article, and 4- the contact information.-->
+      <div class="hero intro">
+        <h2>Our Weather App Services</h2>
+        <h3>
+          Our community helps you to prepare <br />
+          for a hard run in hard conditions. <br />
+          <br />
+          You're Going Out No Matter What,
+          <br />
+          ya might as well be ready.
+        </h3>
+        <h2 class="townName">TOWN NAME</h2>
+      </div>
+    
+      <section class="hero summary">
+        <div class="forecast gearRec">
+      <!-- Reccommended Apparrel combinations matching weather
+            <div class="days">
+            <div id="day0"></div>
+            <div id="day1"></div>
+            <div id="day2"></div>
+            <div id="day3"></div>
+            <div id="day4"></div>
+            <div id="day5"></div>
+          </div> -->
+        </div>
+<!-- NAV BAR -->
+        <section class="weather">
+          <div class="town-img">
+            <picture>
+              <source id="preston-lg" srcset="./images/preston-town-progressive-lossy-sizes/preston-lg-1200w.jpg" media="(min-width: 1200px)">
+              <source id="preston-md" srcset="./images/preston-town-progressive-lossy-sizes/preston-md-850w.jpg" media="(min-width: 649px) and (max-width: 1999)">
+                <img id="preston-sm" src="./images/preston-town-progressive-lossy-sizes/preston-sm-600w.jpg" alt="snow shoeing in deep snow next to a creek">
+            </picture>
+          </div>
+
+            <nav class="hero clearFix" id="weatherBox">
+              <button onclick="toggleForecast()" id="cloud">
+                &#127780; Weather Summary <span class="triangle"></span>
+              </button>
+              <ul id="weatherDetails" class="hide">
+                <li><span id="todaySummary"></span></li>
+                <li>
+                  <a href="#">Temperature: <span>-20 &deg;F</span></a>
+                </li>
+                <li>
+                  <a href="#">Precipitation: <span>rainy</span></a>
+                </li>
+                <li>
+                  <a href="#">Wind: <span>10 mph</span></a>
+                </li>
+                <li>
+                  <a href="#">Cloud: <span>overcast</span></a>
+                </li>
+                <li>
+                  <a href="#">Accumulation: <span>2 inches</span></a>
+                </li>
+                <li>
+                  <a href="#">Wind Chill: <span>-15 &deg;F</span></a>
+                </li>
+              </ul>
+            </nav>
+        
+            
+        </section>
+          <main>
+        </section>
+        <section class="forecast hero">
+<!-- 5 DAY FORECAST -->
+          <h2>5 Day Forecast</h2>
+          <div class="dayBox">
+            <div class="day" id="today0">
+              <p>Tue, date + 0</p>
+              <p>&#127780</p>
+            </div>
+            <div class="day" id="today1">
+              <p>Tue, date + 1</p>
+              <p>&#127780</p>
+            </div>
+            <div class="day" id="today2">
+              <p>Tue, date + 2</p>
+              <p>&#127780</p>
+            </div>
+            <div class="day" id="today3">
+              <p>Tue, date + 3</p>
+              <p>&#127780</p>
+            </div>
+            <div class="day" id="today4">
+              <p>Tue, date + 4</p>
+              <p>&#127780</p>
+            </div>
+            <div class="day" id="today5">
+              <p>Tue, date + 5</p>
+              <p>&#127780</p>
+            </div>
+          </div>
+      </section>
+      <section class="article hero">
+        <div class="lgArticle">
+        <h2>Snow Shoe Running in Blizzard Conditions</h2>
+        <small class="small">by Author</small>
+        <p id="story-snowShoe">
+          <b> Snow Shoe Running in Blizzard Conditions..</b><br>Lorem, ipsum
+          dolor sit amet consectetur adipisicing elit. Quae temporibus corrupti
+          commodi expedita, labore dicta soluta perferendis cupiditate officia.
+          Dolorum, minus eum natus possimus fugiat praesentium eaque aperiam
+          temporibus! Alias.labore dicta soluta perferendis cupiditate officia.
+          Dolorum, minus eum natus possimus fugiat praesentium eaque aperiam
+          temporibus! Alias. possimus fugiat praesentium natus possimus fugiat 
+          praesentium
+        </p>
+        </div>
+<!-- ARTICLE IMAGE -->
+        <div class="articleImg">
+          <!-- 
+            the picture tag is best used for art direction such as customized art for portrait and landscape
+            
+            <picture> 
+            <source
+                media="(orientation: landscape)"
+                srcset="image-small.png 320w,
+                        image-medium.png 800w,
+                        image-large.png 1200w"
+                sizes="(min-width: 60rem) 80vw,
+                       (min-width: 40rem) 90vw,
+                       100vw">
+            <source
+                media="(orientation: portrait)"
+                srcset="image-small-portrait.png 160w,
+                        image-medium-portrait.png 400w,
+                        image-large-portrait.png 600w"
+                sizes="(min-width: 60rem) 80vw,
+                       (min-width: 40rem) 90vw,
+                       100vw">
+            <img src="image-small.png" alt="Image description"> 
+            </picture>
+      -->
+
+      <picture>
+        <source srcset="./images/preston-town-progressive-lossy-sizes/preston-lg-1200w.jpg" media="(min-width: 850px)">
+        <source srcset="./images/preston-town-progressive-lossy-sizes/preston-md-850w.jpg" media="(min-width: 823px) and (max-width: 849)">
+          <img src="./images/preston-town-progressive-lossy-sizes/preston-sm-600w.jpg" alt="snow shoeing in deep snow next to a creek">
+      </picture>
+
+      <!-- <picture>
+        <source srcset="./images/mike-doute-unsplash-800w-prog.jpg" media="(min-width: 850px)">
+        <source srcset="./images/mike-doute-unsplash-400w-prog.jpg" media="(min-width: 600px) and (max-width: 849)">
+          <img src="./images/mike-doute-unsplash.jpg" alt="snow shoeing in deep snow next to a creek">
+      </picture> -->
+        
+        </div>
+      </section>
+
+
+
+      <section class="contact hero">
+        <div>
+          <h2>Contact Us</h2>
+        </div>
+
+
+        <div class="contactBox">
+
+
+          <div id="clubs">
+            <h4>Clubs</h4>
+          <p>
+            Submit local photos of events and weather conditions<br><br>
+            Email: ouremail@gomail.com<br>
+            Phone: 1-800-chek-temp<br>
+            www.website.com
+          </p>
+          </div>
+
+
+          <div id="parks">
+            <h4>Parks</h4>
+            <p>
+              Events, Ground Conditions, Hours <br> <br> 
+              Email: ouremail@gomail.com<br>
+              Phone: 1-800-chek-temp<br>
+              www.website.com
+            </p>
+          </div>
+
+        </div>
+        <div class="imgBox">
+        <div>
+<!-- 4. Contact Info- local running clubs, outdoor enthusiasts, hobbiests -->
+          <img src="./images/compass-aaron-burden-unsplash.jpg" alt="image of compass as a map placeholder">
+        </div>
+      </div>
+      </section>
+
+
+    </main>
+
+<!-- TODO: FOOTER: display the current date using JavaScript in this format Wednesday, 24 July 2020. -->
+      <footer>
+        <p>Current Date: <span id="today"></span></p>
+        <p>
+          &copy; <span id="updateYear"></span>
+          | Grady W. Hodge | Texas |
+          <a href="https://www.byui.edu/online" target="_blank"
+            >BYUI Online Learning</a
+          >
+          <br />
+          <a href="https://www.byui.edu/online" target="_blank"></a>Terms of Use</a>
+          <span id="updates"
+            >Last Updated: <span id="fullDate"> </span> <span id="time"></span
+          ></span>
+        </p>
+      </footer>
+
+      <script src="./js/main.js"></script>
+      <script src="./js/wind-chill.js"></script>
+    </div> <!--end content wrapper-->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    WebFont.load({
+      google: {
+        families: [
+           'Nunito', 'Lora'
+        ]
+      }
+    });
+  </body>
+</html>

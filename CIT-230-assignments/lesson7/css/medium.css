@@ -1,0 +1,46 @@
+/* LESSON 7: PRESTON TOWN CENTER */
+@media only screen and (min-width: 649px) {
+  .title {
+    flex-basis: 30%;
+  }
+
+  .intro h3 {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .h1Width {
+    min-width: 450px;
+    font-size: 20px;
+    margin: 0 5px;
+  }
+
+  .h2Width {
+    min-width: 500px;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
+  nav #navUl li {
+    max-width: 200px;
+    margin: 0 23px;
+  }
+
+  #weatherBox {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  #weatherDetails {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .contact img {
+    width: 100%;
+    margin: 5px 0;
+    /* display: none; */
+  }
+
+  /*****************************************/
+} /* end Media Query */
