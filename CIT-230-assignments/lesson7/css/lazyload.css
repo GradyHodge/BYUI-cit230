@@ -28,7 +28,7 @@ h2 {
   gap: 2rem;
   border: 2px solid green;
   background-color: rgb(28, 25, 25);
-  margin-top: 80rem;
+  margin-top: 80%;
   padding: 2rem;
 }
 
@@ -38,11 +38,11 @@ the placeholder is blurred in CSS.
 
 We render the images with a blur at the beginning, 
 so a transition to the sharp one can be achieved:*/
-.container picture img[data-src] {
+.container img[data-src] {
   filter: blur(0.4em);
 }
 
-.container picture img {
+.container img {
   filter: blur(0em);
   transition: filter 0.5s;
 }

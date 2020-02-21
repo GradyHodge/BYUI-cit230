@@ -1,27 +1,52 @@
 // LESSON 7 LAZY LOADING IMAGES
 
-// THE OLD WAY
+//
 // Loading via JavaScript THE OLD WAY
 // The app.js file processes the data-src attributes like so:
 
+// this gets all images with the data-src attribute
 let imagesToLoad = document.querySelectorAll("img[data-src]");
+
+//optional parameters being set for Intersection Observer API
+const imgOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px 100px 0px"
+};
+
 const loadImages = image => {
   image.setAttribute("src", image.getAttribute("data-src"));
   image.onload = () => {
     image.removeAttribute("data-src");
   };
 };
-// // The imagesToLoad variable contains references to all the images,
-// // while the loadImages function moves the path from data-src to src.
-// // When each image is actually loaded, we remove its data-src attribute
-// // as it's not needed anymore. Then we loop through each image and load it:
 
-imagesToLoad.forEach(img => {
-  loadImages(img);
-});
-// ABOVE, THE OLD WAY TO LOAD IMAGES
+// First, check to see if Intersection Observer is supported
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach(item => {
+      if (item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
+      }
+    });
+  });
+  imagesToLoad.forEach(img => {
+    observer.observe(img);
+  });
+} else {
+  imagesToLoad.forEach(img => {
+    loadImages(img);
+  });
+}
+// // // The imagesToLoad variable contains references to all the images,
+// // // while the loadImages function moves the path from data-src to src.
+// // // When each image is actually loaded, we remove its data-src attribute
+// // // as it's not needed anymore. Then we loop through each image and load it:
 
-// Loading on demand
+//
+
+// LOADING ON DEMAND FROM MDN code sample
+
 // The image loading mechanism discussed in the above section works OK — it loads the images after rendering the HTML structure, and applies a nice transition effect in the process. The problem is that it still loads all the images at once, even though the user will only see the first two or three upon page load.
 
 // This problem can be solved with the new Intersection Observer API — using this we can ensure that images will be loaded only when they appear in the viewport.
