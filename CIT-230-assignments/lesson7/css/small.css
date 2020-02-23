@@ -393,12 +393,114 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
-  max-width: 1200px;
+  max-width: 98%;
   margin: 1rem 0;
   border-radius: 20px;
+  justify-content: center;
 }
 
-/***********  CLEAR FIX  ******************************************/
+/* ***************************************
+
+**********    GALLERY    *****************
+               SMALL
+******************************************/
+
+.wrapper {
+  width: 1200px;
+  height: auto;
+  margin: 3rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  /* grid-template-areas:
+    "header"
+    "nav"
+    "pic1"
+    "pic2"
+    "pic3"
+    "pic4"
+    "pic5"
+    "pic6"
+    "pic7"
+    "pic8"
+    "pic9"
+    "pic10"
+    "pic11"
+    "pic12"
+    "pic13"
+    "pic14"
+    "pic15"
+    "footer";
+  justify-content: center; */
+  /* justify-items: center; */
+}
+
+.main-head {
+  grid-area: header;
+}
+
+.main-nav {
+  grid-area: nav;
+}
+
+.picFrame1 {
+  grid-area: pic1;
+}
+.picFrame2 {
+  grid-area: pic2;
+}
+.picFrame3 {
+  grid-area: pic3;
+}
+.picFrame3 {
+  grid-area: pic3;
+}
+.picFrame4 {
+  grid-area: pic4;
+}
+.picFrame5 {
+  grid-area: pic5;
+}
+.picFrame6 {
+  grid-area: pic6;
+}
+.picFrame7 {
+  grid-area: pic7;
+}
+.picFrame8 {
+  grid-area: pic8;
+}
+.picFrame9 {
+  grid-area: pic9;
+}
+.picFrame10 {
+  grid-area: pic10;
+}
+.picFrame11 {
+  grid-area: pic11;
+}
+.picFrame12 {
+  grid-area: pic12;
+}
+.picFrame13 {
+  grid-area: pic13;
+}
+.picFrame14 {
+  grid-area: pic14;
+}
+.picFrame15 {
+  grid-area: pic15;
+}
+.main-footer {
+  grid-area: footer;
+}
+
+/*****************************************  
+     CLEAR FIX  
+******************************************/
 
 .clearFix:after {
   content: "";

@@ -9,8 +9,8 @@ let imagesToLoad = document.querySelectorAll("img[data-src]");
 
 //optional parameters being set for Intersection Observer API
 const imgOptions = {
-  threshold: 0,
-  rootMargin: "0px 0px 100px 0px"
+  threshold: 0.5,
+  rootMargin: "500px 0px 500px 0px"
 };
 
 const loadImages = image => {

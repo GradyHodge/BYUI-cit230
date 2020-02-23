@@ -1,0 +1,261 @@
+/* ***************************************
+
+**********    GALLERY    *****************
+               SMALL
+******************************************/
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 1rem;
+  text-align: center;
+  max-width: 1200px;
+  border-radius: 20px 20px 0 0;
+}
+
+.summary {
+  height: 700px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+header img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.title {
+  flex-basis: 40%;
+}
+
+.h1Width {
+  min-width: 200px;
+}
+
+.h2Width {
+  min-width: 450px;
+}
+
+.townName {
+  text-align: center;
+  font-family: "Lora", serif;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+/*-----------------------------------------------------------*/
+
+/*    NAV BAR    */
+
+/*-----------------------------------------------------------*/
+nav {
+  font-family: "Nunito", sans-serif;
+  max-width: 1200px;
+  background-color: transparent;
+}
+nav button {
+  margin: 0.2rem 2%;
+  background-color: transparent;
+  border: none;
+  font-family: "lora", serif;
+  font-size: 2rem; /* recommend @44px for easy to mash on a touch screen */
+  color: #e7f20d;
+}
+
+#hamburger:hover {
+  transition: ease-in-out;
+  transform: translate(1%, 1%);
+}
+
+
+
+
+
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 1rem;
+  text-align: center;
+  max-width: 1200px;
+  border-radius: 20px 20px 0 0;
+}
+
+header img {
+  width: 80px;
+  height: 80px;
+  float: left;
+  border-radius: 50%;
+  margin: 25px 10px 5px 40px;
+}
+
+header h1 {
+  font-size: 45px;
+}
+header h2 {
+  margin-top: 20px;
+}
+.main-nav {
+  /* grid-area: nav; */
+  display: flex;
+  justify-items: center;
+  align-items: center;
+ 
+  
+} 
+
+.main-nav ul {
+  display: inline-flex;
+  
+  align-items: center;
+  list-style-type: none;
+}
+
+#navUl li a{
+  padding: 0 10px;
+  justify-items: space-around;
+}
+
+footer {
+  background-color: #116466;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  max-width: 98%;
+  margin: 1rem 0;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+figure {
+  transition: 0.2s;
+  transition-timing-function: ease-in;
+ }
+ 
+figure:hover {
+  box-shadow: 
+             0 0  0 2px rgba(255, 255, 255, 0.502),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+  transition: 0.2s;
+  transition-timing-function: ease-in;
+  transform: scale(1.1);
+  transition: 0.2s;
+  transition-timing-function: ease-out;
+  
+ }
+ 
+
+.wrapper {
+  /* width: 1200px; */
+  height: auto;
+  margin: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  /* grid-template-areas:
+    "header"
+    "nav"
+    "pic1"
+    "pic2"
+    "pic3"
+    "pic4"
+    "pic5"
+    "pic6"
+    "pic7"
+    "pic8"
+    "pic9"
+    "pic10"
+    "pic11"
+    "pic12"
+    "pic13"
+    "pic14"
+    "pic15"
+    "footer";
+  justify-content: center; 
+   justify-items: center; 
+}
+.main-head {
+  grid-area: header;
+}
+*/
+.main-nav {
+  /* grid-area: nav; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+} 
+
+/* .picFrame1 {
+  grid-area: pic1;
+}
+.picFrame2 {
+  grid-area: pic2;
+} */
+/* .picFrame3 {
+  grid-area: pic3;
+}
+.picFrame3 {
+  grid-area: pic3;
+}
+.picFrame4 {
+  grid-area: pic4;
+}
+.picFrame5 {
+  grid-area: pic5;
+}
+.picFrame6 {
+  grid-area: pic6;
+}
+.picFrame7 {
+  grid-area: pic7;
+}
+.picFrame8 {
+  grid-area: pic8;
+}
+.picFrame9 {
+  grid-area: pic9;
+}
+.picFrame10 {
+  grid-area: pic10;
+}
+.picFrame11 {
+  grid-area: pic11;
+}
+.picFrame12 {
+  grid-area: pic12;
+}
+.picFrame13 {
+  grid-area: pic13;
+}
+.picFrame14 {
+  grid-area: pic14;
+}
+.picFrame15 {
+  grid-area: pic15;
+}
+.main-footer {
+  grid-area: footer;
+} */
+ img:hover {
+  box-shadow: 7px 7px 7px 0 rgba(98, 126, 136, 0.519);
+ }
+
+footer {
+  background-color: #116466;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  max-width: 98%;
+  margin: 1rem 0;
+  border-radius: 20px;
+  justify-content: center;
+}
