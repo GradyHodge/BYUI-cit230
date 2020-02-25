@@ -8,6 +8,8 @@ if (day != 5) {
   document.getElementById("popup").style.display = "none";
 }
 
+//////////////////////////////////////////////////////////////////
+
 // TODO: nav toggle:display/hide
 
 function toggleMenu() {

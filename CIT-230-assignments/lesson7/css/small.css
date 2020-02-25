@@ -134,13 +134,13 @@ nav button {
   margin: 0.2rem 2%;
   background-color: transparent;
   border: none;
-  font-family: "lora", serif;
+  font-family: "Lora", serif;
   font-size: 2rem; /* recommend @44px for easy to mash on a touch screen */
   color: #e7f20d;
 }
 
 #hamburger:hover {
-  transition: ease-in-out;
+  transition-timing-function: ease-in-out;
   transform: translate(1%, 1%);
 }
 
