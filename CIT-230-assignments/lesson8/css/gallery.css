@@ -4,8 +4,8 @@
                SMALL
 ******************************************/
 
-header {
-  display: flex;
+.main-head {
+  display: inline-block;
   flex-wrap: wrap;
   justify-content: space-between;
 
@@ -72,52 +72,30 @@ header h2 {
 /*    NAV BAR    */
 
 /*-----------------------------------------------------------*/
-nav {
-  font-family: "Nunito", sans-serif;
-  max-width: 100%;
-  background-color: rgba(51, 51, 51, 0.276);
-}
-nav button {
-  margin: 0.2rem 2%;
-  background-color: transparent;
-  border: none;
-  font-family: "Lora", serif;
-  font-size: 2rem; /* recommend @44px for easy to mash on a touch screen */
-  color: #e7f20d;
-}
 
-#hamburger:hover {
-  transition: ease-in-out;
-  transform: translate(1%, 1%);
-}
-
-/* TOGGLE MENU MEDIUM NAVBAR */
-/* nav ul {
-  display: flex;
-  justify-items: space-around;
-  
+/* .main-nav {
+  width: 100%;
 } */
 
-nav ul li a {
-  text-decoration: none;
-  justify-items: space-around;
+#navUl {
+  border-bottom: 1px solid #333;
+  list-style-type: none;
+  margin-left: 40px;
+  max-width: 300px;
+  background-color: rgba(51, 51, 51, 0.474);
 }
 
-/* Toggle Menu - SMALL */
-
-nav ul.hide {
-  display: none;
+#navUl li {
+  border-bottom: 1px solid rgba(51, 51, 51, 0.392);
 }
-nav ul li a {
+
+#navUl li a {
   display: block;
-  padding: 0.8rem 2%;
+  color: #fff;
+  padding: 8px 16px;
   text-decoration: none;
-  color: #fafafa;
-  border-top: 2px solid rgba(0, 0, 0, 0.3);
-  background-color: rgba(3, 3, 3, 0.31);
+  font-size: 2rem;
 }
-
-/* End Toggle Menu- SMALL */
 
 nav ul li.active a {
   background-color: #26c4214b;
@@ -129,28 +107,22 @@ nav ul li a:hover {
   background-color: #11646666;
   color: #fff;
   font-size: 1.5rem;
-  transition: ease-in-out;
+
+  transition-timing-function: ease-in;
   transform: translate(1%, 0);
-  text-decoration: none;
 }
 
-.main-nav {
-  /* grid-area: nav; */
-  display: flex;
-  justify-items: center;
-  align-items: center;
+nav ul.hide {
+  display: none;
 }
 
-.main-nav ul {
-  display: inline-flex;
-
-  align-items: center;
-  list-style-type: none;
-}
-
-#navUl li a {
-  padding: 0 10px;
-  justify-items: space-around;
+nav button {
+  margin-left: 33px;
+  background-color: transparent;
+  border: none;
+  font-family: "Lora", serif;
+  font-size: 2rem; /* recommend @44px for easy to mash on a touch screen 
+  color: #e7f20d;*/
 }
 
 footer {
@@ -162,6 +134,12 @@ footer {
   margin: 1rem 0;
   border-radius: 20px;
   justify-content: center;
+  font-size: 1.2rem;
+}
+
+footer a:visited,
+a {
+  color: lightblue;
 }
 
 figcaption {
@@ -178,7 +156,7 @@ img:hover {
 
 .rootMargin {
   /* padding-bottom: calc(100% + 400px); */
-  padding-bottom: 700px;
+  padding-bottom: 500px;
   place-items: center;
 }
 .wrapper {
@@ -191,192 +169,4 @@ img:hover {
   grid-gap: 10px;
   /* padding: 10px; */
   box-sizing: border-box;
-  /* grid-template-areas:
-    "header"
-    "nav"
-    "pic1"
-    "pic2"
-    "pic3"
-    "pic4"
-    "pic5"
-    "pic6"
-    "pic7"
-    "pic8"
-    "pic9"
-    "pic10"
-    "pic11"
-    "pic12"
-    "pic13"
-    "pic14"
-    "pic15"
-    "footer";
-  justify-content: center; 
-   justify-items: center; 
 }
-.main-head {
-  grid-area: header;
-}
-
-.main-nav {
-  /* grid-area: nav;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: red;
-}  */
-
-  /* .picFrame1 {
-  grid-area: pic1;
-}
-.picFrame2 {
-  grid-area: pic2;
-} */
-  /* .picFrame3 {
-  grid-area: pic3;
-}
-.picFrame3 {
-  grid-area: pic3;
-}
-.picFrame4 {
-  grid-area: pic4;
-}
-.picFrame5 {
-  grid-area: pic5;
-}
-.picFrame6 {
-  grid-area: pic6;
-}
-.picFrame7 {
-  grid-area: pic7;
-}
-.picFrame8 {
-  grid-area: pic8;
-}
-.picFrame9 {
-  grid-area: pic9;
-}
-.picFrame10 {
-  grid-area: pic10;
-}
-.picFrame11 {
-  grid-area: pic11;
-}
-.picFrame12 {
-  grid-area: pic12;
-}
-.picFrame13 {
-  grid-area: pic13;
-}
-.picFrame14 {
-  grid-area: pic14;
-}
-.picFrame15 {
-  grid-area: pic15;
-}
-.main-footer {
-  grid-area: footer;
-} */
-}
-/* ************************************************
-
-*******   MEDIUM MEDIA QUERY FOR GALLERY    *******
-
-************************************************* */
-@media only screen and (min-width: 600px) {
-  figcaption {
-    display: block;
-    font-size: 1rem;
-    width: 100%;
-  }
-
-  figure {
-    transition: 0.2s;
-    transition-timing-function: ease-in;
-  }
-} /* END MEDIUM MEDIA QUERY */
-
-/* grid-template-areas:
-    "header"
-    "nav"
-    "pic1"
-    "pic2"
-    "pic3"
-    "pic4"
-    "pic5"
-    "pic6"
-    "pic7"
-    "pic8"
-    "pic9"
-    "pic10"
-    "pic11"
-    "pic12"
-    "pic13"
-    "pic14"
-    "pic15"
-    "footer";
-  justify-content: center; 
-   justify-items: center; 
-}
-.main-head {
-  grid-area: header;
-}
-
-.main-nav {
-  /* grid-area: nav;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: red;
-}  */
-
-/* .picFrame1 {
-  grid-area: pic1;
-}
-.picFrame2 {
-  grid-area: pic2;
-} */
-/* .picFrame3 {
-  grid-area: pic3;
-}
-.picFrame3 {
-  grid-area: pic3;
-}
-.picFrame4 {
-  grid-area: pic4;
-}
-.picFrame5 {
-  grid-area: pic5;
-}
-.picFrame6 {
-  grid-area: pic6;
-}
-.picFrame7 {
-  grid-area: pic7;
-}
-.picFrame8 {
-  grid-area: pic8;
-}
-.picFrame9 {
-  grid-area: pic9;
-}
-.picFrame10 {
-  grid-area: pic10;
-}
-.picFrame11 {
-  grid-area: pic11;
-}
-.picFrame12 {
-  grid-area: pic12;
-}
-.picFrame13 {
-  grid-area: pic13;
-}
-.picFrame14 {
-  grid-area: pic14;
-}
-.picFrame15 {
-  grid-area: pic15;
-}
-.main-footer {
-  grid-area: footer;
-} */
