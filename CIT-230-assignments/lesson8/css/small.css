@@ -433,12 +433,13 @@ form {
 
 fieldset {
   border: 1;
+  border-radius: 20px;
   padding: 30px;
   margin: 0 auto;
   background-color: rgba(14, 13, 13, 0.358);
 
-  display: relative;
-  justify-content: center;
+  position: relative;
+  align-items: center;
 }
 
 form label {
