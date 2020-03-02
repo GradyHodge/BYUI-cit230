@@ -153,31 +153,68 @@
 
 <!-- user in-danger level using input of type radio with options 
     and values of "yes," "maybe," and "no." -->
-    <p class="in-danger-q"> 
+    <!-- <p class="in-danger-q"> 
       <p class="form_label">Are you in danger?</p>
     
       <div class="radio-buttons">
-          <label for="danger-yes" class="radio">
+        <label for="danger-yes" class="radio">Yes
               <input type="radio" 
                     name="danger_lvl" 
                     value="yes" />
-              Yes
-          </label>
-          <label for="danger-maybe" class="radio">
+              </label>
+
+        <label for="danger-maybe" class="radio">Maybe
               <input type="radio" 
                       name="danger-lvl" 
                       value="maybe" />
-              Maybe
           </label>
-          <label for="danger-no" class="radio">
+          
+          <label for="danger-no" class="radio">No
               <input type="radio"  
                     name="danger-lvl" 
                     value="no" />
-              No
           </label>
       </div>
       
-   </p>
+   </p> -->
+
+   <!-- <div class="danger-buttons">
+    <input type="radio" id="contactChoice1"
+     name="contact" value="email" checked>
+    <label for="contactChoice1">Email</label>
+
+    <input type="radio" id="contactChoice2"
+     name="contact" value="phone">
+    <label for="contactChoice2">Phone</label>
+
+    <input type="radio" id="contactChoice3"
+     name="contact" value="mail">
+    <label for="contactChoice3">Mail</label>
+  </div> -->
+
+  <label class="danger-label"> 
+    <p class="label-text">Are you in danger?</p>
+    <div class="form-label">
+        <label for="danger_level_yes">
+            <input type="radio" id="danger_level_yes" name="danger_level" value="yes" />
+            Yes
+        </label>
+    </div>
+    <div class="form-label">
+        <label for="danger_level_maybe">
+            <input type="radio" id="danger_level_maybe" name="danger_level" value="maybe" />
+            Maybe
+        </label>
+    </div>
+    <div class="form-label">
+        <label for="danger_level_no">
+            <input type="radio" id="danger_level_no" name="danger_level" value="no" />
+            No
+        </label>
+    </div>
+    
+ </label>
+ 
 
    <!-- storm severity using type range (1 to 10) with a corresponding label that indicates the current range value from 1 to 10.
 Hint: See the Pen HTML Form example objects  -->
@@ -203,8 +240,8 @@ Hint: See the Pen HTML Form example objects  -->
       <option value="6" label="6"></option>
       <option value="7" label="7"></option>
       <option value="8" label="8"></option>
-      <option value="9" label="10"></option>
-      <option value="10" label="11"></option>
+      <option value="9" label="9"></option>
+      <option value="10" label="10"></option>
     </datalist>
 </label>
 
@@ -262,39 +299,50 @@ Hint: See the Pen HTML Form example objects  -->
   <label for="name"> 
       <p class="form_label">Full name:</p>
       <input type="text" id="name" name="name" required minlength="5" pattern="^[a-zA-Z ]*$" />
-   </label>
+      <span class="validity"></span>
+    </label>
 
 <!-- email using input of type email and use a placeholder to provide a demo email -->
 
   <label for="email">
        <p class="form_label">Email:</p>
-       <input type="text" id="email" name="email" placeholder="username@email.com" required />
-  </label>
+       <input type="text" name="email" id="email" name="email" placeholder="username@email.com" required />
+       <span class="validity"></span>
+      </label>
 
 <!-- phone number using input of type tel and is required -->
   <div class="phone-box">
-  <!-- <label for="phone"> 
+  <label for="phone"> 
       <p class="form_label">Phone:</p>
       <br>
-      <input type="tel" id="phone" name="phone" placeholder="801-222-3456" required />
-   </label> -->
+      <input type="tel" id="phone" name="phone" placeholder="801-222-3456" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="14" size="20"/>
+      <span class="validity"></span>
+   </label>
 
-   <p>
-    <label>Phone:<br>
-     (<input class="phone-input" name="tel1" type="tel" pattern="[0-9]{3}" maxlength="3" size="5"/>)-
-      <input class="phone-input" name="tel2" type="tel" pattern="[0-9]{3}" maxlength="3" placeholder="###" size="5"/> - 
-      <input class="phone-input" name="tel3" type="tel" pattern="[0-9]{4}" maxlength="3" placeholder="####" size="7"/>
-    </label>
-   </p>
-  </div>
+   <!-- <div>
+    <label>Phone:</label>
+     (<input class="phone-input" name="tel1" type="tel" pattern="[0-9]{3}" maxlength="3" size="20"/>)-
+      <input class="phone-input" name="tel2" type="tel" pattern="[0-9]{3}" maxlength="3" placeholder="###" size="20"/> - 
+      <input class="phone-input" name="tel3" type="tel" pattern="[0-9]{4}" maxlength="3" placeholder="####" size="20"/>
+    
+    <span class="validity"></span>
+  </div> -->
 
 <!-- zip code using input of type number and is required -->
 
-  <label for="zip"> 
-      <p class="form_label">Zip</p>
+  <!-- <label for="zip"> 
+      <p class="form_label">Zip:</p>
       <br>
       <input type="number" id="zip" name="zip" required pattern="(\d{5}([\-]\d{4})?)" />
-  </label>
+      <span class="validity"></span>
+  </label> -->
+
+  <label for="zip"> 
+    <p class="form_label">Zip:</p>
+    <br>
+    <input type="number" id="zip" name="zip" required pattern="(\d{5}([\-]\d{4})?)" />
+    <span class="validity"></span>
+</label>
   
 </fieldset>
 

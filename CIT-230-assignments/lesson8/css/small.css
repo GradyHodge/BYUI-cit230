@@ -470,8 +470,8 @@ input[type="submit"] {
   border-image: none;
   border-style: solid;
   border-width: 1px;
-  color: white;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.75);
+  color: rgb(226, 220, 220);
+  text-shadow: 0 5px 5px rgba(34, 33, 33, 0.577);
   cursor: pointer;
   font-size: 2rem;
   background-color: #26c4216e;
@@ -492,34 +492,22 @@ input[type="submit"] {
 input {
   margin-top: 10px;
   margin-bottom: 15px;
-  width: 100%;
+  width: 70%;
   font-size: 16px;
   background-color: white;
-}
-
-input {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
   padding: 7px 10px;
 }
+
 select {
-  height: 34px;
+  height: 40px;
+  width: 70px;
 }
 
 input[type="range"] {
-  width: 90%;
-}
-.radio {
-  width: 30px;
-  padding: 0 0 0 5px;
-}
-
-.in-danger-q .radio-buttons {
-  display: inline-block;
-  padding-top: 5px;
-  width: 30%;
-  white-space: nowrap;
+  width: 50%;
 }
 
 label p {
@@ -533,6 +521,67 @@ select {
   font-size: 16px;
   background-color: white;
 }
+
+input[type="number"] {
+  width: 100px;
+}
+
+input + span {
+  padding-right: 30px;
+}
+
+input:invalid + span:after {
+  position: absolute;
+  content: "✖";
+  padding-left: 5px;
+  color: #8b0000;
+}
+
+input:valid + span:after {
+  position: absolute;
+  content: "✓";
+  padding-left: 5px;
+  color: #009000;
+}
+
+.radio-buttons {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* RADIO BUTTONS */
+
+/* div.dangerbuttons:first-of-type {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
+
+.danger-buttons label {
+  margin-right: 15px;
+  line-height: 32px;
+}
+
+.danger-buttons input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+.danger-buttons input:checked {
+  border: 10px solid rgb(65, 209, 21);
+} */
 
 /*****************************************  
      CLEAR FIX  
