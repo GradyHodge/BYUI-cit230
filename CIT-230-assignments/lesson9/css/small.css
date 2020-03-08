@@ -397,6 +397,13 @@ footer {
   margin: 1rem 0;
   border-radius: 20px;
   justify-content: center;
+  line-height: 1.5;
+}
+
+footer a {
+  color: lightblue;
+  font-size: 1.3rem;
+  vertical-align: baseline;
 }
 
 /* ***************************************
@@ -415,27 +422,6 @@ footer {
   grid-gap: 10px;
   padding: 10px;
   box-sizing: border-box;
-  /* grid-template-areas:
-    "header"
-    "nav"
-    "pic1"
-    "pic2"
-    "pic3"
-    "pic4"
-    "pic5"
-    "pic6"
-    "pic7"
-    "pic8"
-    "pic9"
-    "pic10"
-    "pic11"
-    "pic12"
-    "pic13"
-    "pic14"
-    "pic15"
-    "footer";
-  justify-content: center; */
-  /* justify-items: center; */
 }
 
 .main-head {
