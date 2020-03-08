@@ -13,8 +13,6 @@
 // Let's store the resource, the URL of the JSON file into a const variable to start.
 const requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
 
-// "https://byui-cit230.github.io/lessons/lesson-09/data/latter-day-prophets.json";
-
 // We will use a basic fetch() method and feed it the required argument, the URL and use the .then()
 // method that returns a Promise which response we will work with as an argument to an anonymous function.
 // We need to extract the JSON content from the noise of the full HTTP response by using the json() method.
@@ -28,7 +26,7 @@ fetch(requestURL)
   })
   .then(function(jsonObject) {
     console.table(jsonObject); // temporary checking for valid response and data parsing
-    const prophets = jsonObject["towns"];
+    const towns = jsonObject["towns"];
     for (let i = 0; i < towns.length; i++) {
       let card = document.createElement("section");
       let h2 = document.createElement("h2");
@@ -55,6 +53,10 @@ fetch(requestURL)
       card.appendChild(image);
 
       document.querySelector("div.cards").appendChild(card);
+    }
+
+    if (towns[i] != 1 || 4 || 5) {
+      // card.setAttribute("display", none);
     }
   });
 
