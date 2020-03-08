@@ -1,0 +1,42 @@
+/* LESSON 9: FETCH API */
+
+body {
+  background-color: rgb(245, 245, 234);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  border: 2px solid gray;
+  padding: 1rem;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.cards section {
+  border: 2px solid gray;
+  padding: 1rem;
+  justify-items: center;
+  object-fit: fill;
+  box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.426);
+}
+
+img {
+  max-width: 100%;
+  box-shadow: 7px 7px 7px rgba(128, 128, 128, 0.426);
+}
+
+/* FONTS */
+h1 {
+  font-family: "Merienda One", cursive;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Fondamento", cursive;
+}
+
+p {
+  font-family: "Martel", serif;
+}
