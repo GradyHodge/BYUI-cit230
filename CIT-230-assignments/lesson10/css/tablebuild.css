@@ -1,0 +1,73 @@
+:root {
+  --grey: #e7f0ed;
+  --green: #e7ffed;
+  --dkBlue: #628ca6;
+  --ltBlue: #7fb9c2;
+}
+
+/*****    MEYERS RESET CSS | JUST FOR A TABLE RESET    ******/
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 2%;
+  border: 2px solid lightgrey;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  /*************************** END MYERS CSS RESET */
+  height: 2rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: 8px 8px 8px 5px #628ca695;
+  white-space: nowrap;
+  margin: 10% auto;
+}
+
+caption {
+  margin: 50px;
+  border: none;
+  text-align: center;
+  white-space: normal;
+}
+
+thead tr:first-child,
+tfoot {
+  background-color: var(--ltBlue);
+}
+
+tfoot {
+  font-size: 1.25rem;
+}
+thead tr:first-child th {
+  font-size: 3rem;
+  padding: 10px;
+}
+
+thead tr:nth-child(2) th {
+  background-color: var(--dkBlue);
+  color: aliceblue;
+  font-weight: bolder;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: var(--grey);
+}
+tbody tr:nth-child(even) {
+  background-color: var(--green);
+}
+
+.highlight {
+  color: white;
+  background-color: var(--dkBlue);
+}
