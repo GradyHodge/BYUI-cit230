@@ -171,11 +171,16 @@ img {
   z-index: 100;
 }
 
-#weatherDetails li a {
+#weatherSummary {
   color: #e7f20d;
 }
 
-#weatherDetails li a span {
+#weatherDetails li {
+  color: #e7f20d;
+  background-color: rgba(12, 11, 11, 0.525);
+}
+
+#weatherDetails li span {
   color: white;
   float: right;
 }
