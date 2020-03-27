@@ -174,10 +174,17 @@ img {
 #weatherSummary {
   color: #e7f20d;
 }
+/* #todaySummary {
+  letter-spacing: 4px;
+  display: inline-block;
+  padding: 6px;
+  background-color: rgba(48, 46, 46, 0.296);
+} */
 
 #weatherDetails li {
   color: #e7f20d;
   background-color: rgba(12, 11, 11, 0.525);
+  padding: 5px 10px 5px 10px;
 }
 
 #weatherDetails li span {
@@ -207,7 +214,6 @@ img {
 }
 
 #weatherBox ul li:first-child {
-  text-align: center;
   color: yellow;
   margin: 10px 0;
 }
