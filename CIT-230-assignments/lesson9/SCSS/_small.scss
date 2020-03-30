@@ -136,7 +136,7 @@ nav button {
   border: none;
   font-family: "Lora", serif;
   font-size: 2rem; /* recommend @44px for easy to mash on a touch screen */
-  color: #e7f20d;
+  color: $primaryColor;
 }
 
 #hamburger:hover {
@@ -172,7 +172,7 @@ img {
 }
 
 #weatherSummary {
-  color: #e7f20d;
+  color: $primaryColor;
 }
 /* #todaySummary {
   letter-spacing: 4px;
@@ -182,7 +182,7 @@ img {
 } */
 
 #weatherDetails li {
-  color: #e7f20d;
+  color: $primaryColor;
   background-color: rgba(12, 11, 11, 0.525);
   padding: 5px 10px 5px 10px;
 }
@@ -207,7 +207,7 @@ img {
 }
 
 .triangle {
-  border-top: 22px solid #e7f20d;
+  border-top: 22px solid $primaryColor;
   border-right: 10px solid transparent;
   border-left: 10px solid transparent;
   float: right;

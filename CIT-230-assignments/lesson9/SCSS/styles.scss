@@ -1,0 +1,15 @@
+@import "normalize";
+
+@import "small";
+
+@media only screen and (min-width: 649px) {
+  @import "medium";
+} /* end Media Query */
+
+@media only screen and (min-width: 1200px) {
+  @import "large";
+} /* END LARGE MEDIA QUERY*/
+
+// @media only screen and (min-width: 1200px) {
+//   @import "gallery-med";
+// } /* END GALLERY MEDIUM MEDIA QUERY */
