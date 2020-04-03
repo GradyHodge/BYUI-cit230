@@ -1,0 +1,10 @@
+@import "normalize";
+@import "base";
+
+@media only screen and (min-width: 649px) {
+  @import "medium";
+} /* end Medium media Query */
+
+@media only screen and (min-width: 1200px) {
+  @import "large";
+} /* END LARGE MEDIA QUERY*/
