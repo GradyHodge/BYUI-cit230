@@ -1,57 +1,182 @@
+<!-- CIT-230 FINAL TERM | SALMON RIVER ADVENTURE GUIDES -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Salmon River Adventures</title>
-</head>
-<body>
-  <h2>Preston, Idaho</h2>
-  <hr />
-  <section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Local Guides dedicated to the best adventures on the Salmon River"
+    />
+    <title> Contact Salmon River Adventures</title>
 
-      <summary>
-        <div>
-          <h3>Weather Summary</h3>
-<!-- Temp, Humidity, Visibility, Icons, Wind Speed, Wind Chill -->
+    <link rel="stylesheet" href="../SCSS/styles.css" />
+  </head>
+  <body>
+    <div class="grid__container">
+      <!-- CSS GRID CONTAINER - Header, Navbar, Main, Footer -->
+      <!-- CSS HEADER-SUBGRID -->
+      <!-- 1.  TODO: HEADER - LOGO, TITLE, SLOGAN, CTA -->
 
-<p>
-<!-- Temp -->
-  Temperature: <span id="temp">missing data</span>&#0176 F
-</p>
-<p>
-<!-- Humidity -->
-Humidity: <span id="humidity">missing data</span>%
-</p>
-<p>
-<!-- Visibility  -->
-Current Condition: <span id="current">&#x1F324;</span>
-<!-- Weather Icon -->
-<img id="icon" alt="icon missing" src="missing data" />
-</p>
-<p>
-<!-- Speed -->
-Wind Speed: <span id="Speed">missing data</span> MPH
-</p>
-<p>
-<!-- Chill -->
-Wind Chill: <span id="Chill">missing data</span>&#0176 F
-</p>
+      <header class="header-subgrid mask">
+        <a href="/index.html"><img
+          class="header__logo"
+          src="../Images/logo-salmon-river-placeholder.jpeg"
+          alt="Salmon Rivers Company Logo"
+        /></a>
+        
+        <h1 class="header__company-name title">
+          Salmon River Adventures
+        </h1>
+        <h6 id="header__CTA">
+          Plan Ahead <br />
+          We Book <br />
+          Up Fast
+        </h6>
+        <h2 class="header__slogan">
+          Need More information for your Group?  We're Happy to Help!
+        </h2>
+      </header>
 
-<p><p></p></p>
-         
-          
-          <br />
-          <br />
-          <br />
+      <!-- 2.  TODO: NAVBAR - GUIDE | CONTACT | RESERVATIONS | RESOURCES -->
+      <div class="navbarContainer">
+        <nav>
+          <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a class="active" href="../Pages/contact.html">Contact</a></li>
+            <li><a href="../Pages/guides.html">Guides</a></li>
+            <li><a href="../Pages/reservations.html">Reservations</a></li>
+          </ul>
+        </nav>
       </div>
-</summary>
 
-<!-- ////////////////////////////////////////////////////////////// -->
-<div> <h4> Current Weather in Riggins, ID</h4></div>
-<!-- <img class="weather-icon" alt="sky conditions" src=""> -->
+      <div class="contact__form">
 
-<!-- ////////////////////////////////////////////////////////////// -->
-<script src="../JS/weather-api.js" ></script>
+
+      </div>
+<!-- ////////////////////////////////////////////////////////// -->
+      <main>
+        <div class="container"></div>
+                
+                <form action="thank-you.html">
+                  <div>
+                  <label for="f-name">First name:</label><br>
+                  <input type="text" id="f-name" name="firstName"><br>
+                  <label for="l-name">Last name:</label><br>
+                  <input type="text" id="l-name" name="l-name">
+                </div>
+                <div>
+                  <label for="phone">Phone (optional):</label><br>
+                  <input type="phone" id="phone" name="phone"><br>
+                  <label for="email">Email:</label><br>
+                  <input type="email" id="email" name="email"><br>
+                </div>
+                  <label for="question">Questions:</label><br>
+                             <textarea id="question" name="question" rows="7">How can I plan an amazing adventure?</textarea>
+                  <br><input type="submit" value="Submit">
+
+              </form>
+                    <hr />
+                    <div>
+                      <h2>Your Adventure Starts Here</h2>
+                      <h4>Our Outfitter's Headquarters</h4>
+                  </div>
+                    <iframe
+                    src="https://www.google.com/maps/embed/v1/place?q=place_id:EiYxMTI3IFMgTWFpbiBTdCwgUmlnZ2lucywgSUQgODM1NDksIFVTQSIxEi8KFAoSCd_9EhVsxaZUEWpgDEMwsXicEOcIKhQKEgnJpRy-fIxshxHVANTKnM6EPQ&key=AIzaSyCj9POZMzPIL9vLy7tgaoP75yOYHPQvsLg"
+                    allowfullscreen></iframe>
+                    <hr>
+                <p>1127 S Main St, Riggins, I83549</p>
+          
+                <p>1(800)8-Salmon</p>
+                <p>1(800)815-2478</p>
+                <p> <a href="https/www.google.com/maps">Google Maps</a> </p>
+        </div>
+    </main>
+    <!-- ////////////////////////////////////////////////// -->
+
+
+      <!-- 6.  TODO: FOOTER AND SCRIPTS -->
+
+      <footer>
+        <div class="footer__left">
+          <p>Current Date: <span id="today"></span></p>
+          <p>
+            &copy; <span id="updateYear"></span>
+            | Grady W. Hodge | Texas |
+            <a href="https://www.byui.edu/online" target="_blank"
+              >BYUI Online</a
+            >
+            
+            ><br />
+            <span id="updates"
+              >Last Updated: <span id="fullDate"> </span> <span id="time"></span
+            ></span>
+            <br />
+            <a href="https://www.byui.edu/online" target="_blank"
+              >Terms of Use</a
+          </p>
+        </div>
+        <div class="footer__right">
+          <div class="flex">
+            <ul>
+              <li>
+                <a href="https://facebook.com/" target="_blank"
+                  ><img
+                    class="social-icons"
+                    alt="Facebook icon"
+                    src="../Images/social-006-round_facebook.png"
+                /></a>
+              </li>
+              <li>
+                <a href="https://skype.com/" target="_blank"
+                  ><img
+                    class="social-icons"
+                    alt="Skype icon"
+                    src="../Images/social-007_skype.png"
+                /></a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedIn.com/in/gradywhodge/"
+                  target="_blank"
+                  ><img
+                    class="social-icons"
+                    alt="LinkedIn icon"
+                    src="../Images/social-011-round_linkedin.png"
+                /></a>
+              </li>
+              <li>
+                <a href="https://slack.com/" target="_blank"
+                  ><img
+                    class="social-icons"
+                    alt="Slack icon"
+                    src="../Images/social-054-round_slack.png"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
+      <!-- end grid container -->
+    </div>
+    <!-- SCRIPTS -->
+
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+    >
+       WebFont.load({
+        google: {
+          families: [
+             'Alegreya SC', 'Alegreya', 'Alegreya Sans', 'Lora'
+          ]
+        }
+      });
+    </script>
+    <script src="../JS/toggle.js"></script>
+    <script src="../JS/current-date.js"></script>
 </body>
 </html>

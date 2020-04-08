@@ -44,7 +44,7 @@
         <nav>
           <ul class="navigation">
             <li><a class="ham" href="#">&#9776; Menu</a></li>
-            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a class="active" href="../Weather-Site-Final/index.html">Home</a></li>
             <li><a href="./Pages/contact.html">Contact</a></li>
             <li><a href="./Pages/guides.html">Guides</a></li>
             <li><a href="./Pages/resources.html">Reservations</a></li>
@@ -83,9 +83,33 @@
         <!-- 4.  TODO: CURRENT WEATHER -->
         <div id="main__weather">
           <div> <h4> Current Weather in Riggins, ID</h4></div>
-         
+            
+            <!-- Temp, Humidity, Visibility, Icons, Wind Speed, Wind Chill -->
 
-
+            <div clas="weather__box"></div>
+            <p>
+            <!-- Temp -->
+              Temperature: <span id="temp">missing data</span>&#0176 F
+            </p>
+            <p>
+            <!-- Humidity -->
+            Humidity: <span id="humidity">missing data</span>%
+            </p>
+            <p>
+            <!-- Visibility  -->
+            Visibility: <span id="current">&#x1F324;</span>
+            <!-- Weather Icon -->
+            <img id="icon" alt="icon missing" src="missing data" />
+            </p>
+            <p>
+            <!-- Speed -->
+            Wind Speed: <span id="Speed">missing data</span> MPH
+            </p>
+            <p>
+            <!-- Chill -->
+            Wind Chill: <span id="Chill">missing data</span>&#0176 F
+            </p>
+            </div>
         </div>
 
         <!-- 5.  TODO: ADVENTURE SELECTION MATRIX -->

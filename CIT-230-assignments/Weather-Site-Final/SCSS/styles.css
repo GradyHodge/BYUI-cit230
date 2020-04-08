@@ -45,8 +45,7 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -83,8 +82,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -190,9 +188,9 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
+[type=button],
+[type=reset],
+[type=submit] {
   -webkit-appearance: button;
 }
 
@@ -200,9 +198,9 @@ button,
  * Remove the inner border and padding in Firefox.
  */
 button::-moz-focus-inner,
-[type="button"]::-moz-focus-inner,
-[type="reset"]::-moz-focus-inner,
-[type="submit"]::-moz-focus-inner {
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
@@ -211,9 +209,9 @@ button::-moz-focus-inner,
  * Restore the focus styles unset by the previous rule.
  */
 button:-moz-focusring,
-[type="button"]:-moz-focusring,
-[type="reset"]:-moz-focusring,
-[type="submit"]:-moz-focusring {
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -231,8 +229,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -264,10 +261,9 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-[type="checkbox"],
-[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -276,8 +272,8 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
@@ -285,7 +281,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-[type="search"] {
+[type=search] {
   -webkit-appearance: textfield;
   /* 1 */
   outline-offset: -2px;
@@ -295,7 +291,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-[type="search"]::-webkit-search-decoration {
+[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -349,14 +345,14 @@ body {
 
 .grid__container {
   margin: 0.5rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 
 .hero {
   background: url(../Images/canoe-scenic-progressive-900w.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   overflow: hidden;
   z-index: -2;
@@ -393,20 +389,14 @@ body {
 }
 
 .header-subgrid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 1rem;
 }
 
 .header__logo {
-  -ms-grid-row: 1;
   grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
   grid-column: 1/2;
   height: 50px;
   width: 50px;
@@ -417,10 +407,7 @@ body {
 
 .header__company-name {
   margin: 0;
-  -ms-grid-row: 1;
   grid-row: 1;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
   grid-column: 2/4;
 }
 
@@ -435,10 +422,7 @@ body {
   max-width: 600px;
   margin: auto;
   padding: 5px;
-  -ms-grid-row: 2;
   grid-row: 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 4;
   grid-column: 1/5;
   color: #16083a;
 }
@@ -484,14 +468,16 @@ nav {
 }
 
 /* Media Query for medium+  */
+.active {
+  background-color: #eeeaea93;
+  font-size: 32px;
+}
+
 .main__grid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(250px, 2fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
   gap: 10px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   justify-items: space-around;
 }
 
@@ -504,6 +490,8 @@ nav {
 }
 
 .main__card img {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
   overflow: hidden;
 }
@@ -513,13 +501,9 @@ nav {
 }
 
 footer {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
   justify-items: center;
   background-color: #2a748f;
   color: #fff;
@@ -536,24 +520,16 @@ footer a {
 }
 
 .footer__left {
-  -ms-grid-row: 1;
   grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
   grid-column: 1/3;
 }
 
 .footer__right {
-  -ms-grid-row: 1;
   grid-row: 1;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
   grid-column: 3/4;
 }
 
 .flex ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: auto;
 }
@@ -569,25 +545,24 @@ footer a {
 
 @media only screen and (min-width: 650px) {
   .navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
+
   .navigation li {
     display: block;
     /* change state in small view */
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 auto;
-            flex: 1 1 auto;
+    flex: 1 1 auto;
   }
+
   .navigation a {
     text-align: center;
   }
+
   .navigation li:first-child {
     display: none;
   }
 }
-
 /* end Medium media Query */
 /* END LARGE MEDIA QUERY*/
+
 /*# sourceMappingURL=styles.css.map */
