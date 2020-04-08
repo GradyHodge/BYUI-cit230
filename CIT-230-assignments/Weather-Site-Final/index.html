@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="./SCSS/styles.css" />
   </head>
   <body>
-    <div class="grid__container">
+    <div class="grid__container hero">
       <!-- CSS GRID CONTAINER - Header, Navbar, Main, Footer -->
       <!-- CSS HEADER-SUBGRID -->
       <!-- 1.  TODO: HEADER - LOGO, TITLE, SLOGAN, CTA -->
 
-      <header class="header-subgrid">
+      <header class="header-subgrid mask">
         <img
           class="header__logo"
           src="./Images/logo-salmon-river-placeholder.jpeg"
@@ -71,7 +71,7 @@
           <ul id="navUl" class="hide">
             <li class="waypoint"><a href="">Home</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Guides</a></li>
+            <li><a href="./Pages/guides.html">Guides</a></li>
             <li><a href="#">Reservations</a></li>
           </ul>
         </nav>
@@ -82,11 +82,25 @@
 
         <!-- 3.  TODO: 3 TYPES OF TOURS & ADDITIONAL ACTIVITIES-->
         <div id="main__tours" class="main__grid">
-          <div class="main__card"><p>Rafting</p></div>
-          <div id="main__canoeing" class="main__card">Canoeing</div>
-          <div id="main__kayaking" class="main__card">Kayaking</div>
+          <div class="main__card mask">
+            <p>Rafting</p>
+            <img
+              src="./Images/rafting-triumph-400w.jpg"
+              alt="youth group in rubber raft navigating raging white water rapids"
+            />
+          </div>
+
+          <div id="main__canoeing" class="main__card">
+            <p>Canoeing</p>
+            <img src="./Images/rafting-triumph-400w.jpg" alt="" />
+          </div>
+          <div id="main__kayaking" class="main__card">
+            <p>Kayaking</p>
+            <img src="./Images/rafting-triumph-400w.jpg" alt="" />
+          </div>
           <div id="main__activities" class="main__card">
-            Additional Activities
+            <p>Additional Activities</p>
+            <img src="./Images/rafting-triumph-400w.jpg" alt="" />
           </div>
         </div>
 
@@ -111,56 +125,65 @@
 
       <footer>
         <div class="footer__left">
-        <p>Current Date: <span id="today"></span></p>
-        <p>
-          &copy; <span id="updateYear"></span>
-          | Grady W. Hodge | Texas |
-          <a href="https://www.byui.edu/online" target="_blank"
-            >BYUI Online Learning</a
-          >
-          <br />
-          <a href="https://www.byui.edu/online" target="_blank"></a>Terms of Use</a>
-          <span id="updates"
-            >Last Updated: <span id="fullDate"> </span> <span id="time"></span
-          ></span>
-        </p>
-      </div>
-      <div class="footer__right">
-        <ul>
-          <li>
-            <a  href="https://facebook.com/" target="_blank"
-              ><img
-              class="social-icons"
-                alt="Facebook icon"
-                src="./Images/social-006-round_facebook.png"
-            /></a>
-          </li>
-          <li>
-            <a href="https://skype.com/" target="_blank"
-              ><img
-                class="social-icons"
-                alt="Skype icon"
-                src="./Images/social-007_skype.png"
-            /></a>
-          </li>
-          <li>
-            <a href="https://www.linkedIn.com/in/gradywhodge/" target="_blank"
-              ><img
-                class="social-icons"
-                alt="LinkedIn icon"
-                src="./Images/social-011-round_linkedin.png"
-            /></a>
-          </li>
-          <li>
-            <a href="https://slack.com/" target="_blank"
-              ><img
-                class="social-icons"
-                alt="Slack icon"
-                src="./Images/social-054-round_slack.png"
-            /></a>
-          </li>
-        </ul>
-      </div>
+          <p>Current Date: <span id="today"></span></p>
+          <p>
+            &copy; <span id="updateYear"></span>
+            | Grady W. Hodge | Texas |
+            <a href="https://www.byui.edu/online" target="_blank"
+              >BYUI Online</a
+            >
+            
+            ><br />
+            <span id="updates"
+              >Last Updated: <span id="fullDate"> </span> <span id="time"></span
+            ></span>
+            <br />
+            <a href="https://www.byui.edu/online" target="_blank"
+              >Terms of Use</a
+          </p>
+        </div>
+        <div class="footer__right">
+          <div class="flex">
+            <ul>
+              <li>
+                <a href="https://facebook.com/" target="_blank"
+                  ><img
+                    class="social-icons"
+                    alt="Facebook icon"
+                    src="./Images/social-006-round_facebook.png"
+                /></a>
+              </li>
+              <li>
+                <a href="https://skype.com/" target="_blank"
+                  ><img
+                    class="social-icons"
+                    alt="Skype icon"
+                    src="./Images/social-007_skype.png"
+                /></a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a
+                  href="https://www.linkedIn.com/in/gradywhodge/"
+                  target="_blank"
+                  ><img
+                    class="social-icons"
+                    alt="LinkedIn icon"
+                    src="./Images/social-011-round_linkedin.png"
+                /></a>
+              </li>
+              <li>
+                <a href="https://slack.com/" target="_blank"
+                  ><img
+                    class="social-icons"
+                    alt="Slack icon"
+                    src="./Images/social-054-round_slack.png"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
 
       <!-- end grid container -->
@@ -179,5 +202,6 @@
       });
     </script>
     <script src="JS/toggle.js"></script>
+    <script src="JS/current-date.js"></script>
   </body>
 </html>
