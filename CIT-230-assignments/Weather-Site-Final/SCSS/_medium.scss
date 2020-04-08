@@ -4,23 +4,19 @@
 // NAVBAR
 ////////////////////////////////////
 
-.toggle {
+.navigation {
+  display: flex;
+}
+.navigation li {
+  display: block; /* change state in small view */
+  flex: 1 1 auto;
+}
+.navigation a {
+  text-align: center;
+}
+
+.navigation li:first-child {
   display: none;
-}
-
-nav {
-  max-width: 1500px;
-  margin: 5px auto;
-}
-
-ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 20px;
-}
-
-ul li a {
-  font-size: 30px;
 }
 
 ///////////////////////////////////

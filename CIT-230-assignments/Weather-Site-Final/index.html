@@ -19,11 +19,12 @@
       <!-- 1.  TODO: HEADER - LOGO, TITLE, SLOGAN, CTA -->
 
       <header class="header-subgrid mask">
-        <img
+        <a href="/index.html"><img
           class="header__logo"
           src="./Images/logo-salmon-river-placeholder.jpeg"
           alt="Salmon Rivers Company Logo"
-        />
+        /></a>
+        
         <h1 class="header__company-name title">
           Salmon River Adventures
         </h1>
@@ -39,42 +40,17 @@
       </header>
 
       <!-- 2.  TODO: NAVBAR - GUIDE | CONTACT | RESERVATIONS | RESOURCES -->
-      <!-- <div class="navbarContainer">
-         
+      <div class="navbarContainer">
         <nav>
-          <input type="checkbox" id="nav-toggle" />
-          <label for="nav-toggle" class="burger-menu">
-            <img
-              src="./Images/hamburger-menu-round-white.png"
-              alt="round hamburger menu button"
-            />
-          </label>
-          <div class="left-menu">
-            <ul>
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Guides</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Reserve</a></li>
-            </ul>
-          </div>
-          <a href="#" class="logo">Book Now</a>
-        </nav>
-      </div> -->
-
-      <div>
-        <nav>
-          <div>
-            <div class="toggle" onclick="toggleMenu()" id="hamburger">
-              &#9776;
-            </div>
-          </div>
-          <ul id="navUl" class="hide">
-            <li class="waypoint"><a href="">Home</a></li>
-            <li><a href="#">Contact</a></li>
+          <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a href="./Pages/contact.html">Contact</a></li>
             <li><a href="./Pages/guides.html">Guides</a></li>
-            <li><a href="#">Reservations</a></li>
+            <li><a href="./Pages/resources.html">Reservations</a></li>
           </ul>
         </nav>
+       
       </div>
 
       <main>
@@ -106,7 +82,10 @@
 
         <!-- 4.  TODO: CURRENT WEATHER -->
         <div id="main__weather">
-          Current Weather 5 Day Forecast for Salmon River area
+          <div> <h4> Current Weather in Riggins, ID</h4></div>
+         
+
+
         </div>
 
         <!-- 5.  TODO: ADVENTURE SELECTION MATRIX -->
@@ -203,5 +182,5 @@
     </script>
     <script src="JS/toggle.js"></script>
     <script src="JS/current-date.js"></script>
-  </body>
+    <script src="JS/weather-api.js" ></script>
 </html>

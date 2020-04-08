@@ -3,94 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../SCSS/styles.css" />
     <title>Guides</title>
-    <style>
-      nav {
-        margin: 0 auto;
-        max-width: 760px;
-        background-color: tomato;
-      }
-      .navigation {
-        list-style: none;
-        padding: 0;
-      }
-      .navigation li:first-child {
-        display: block;
-      }
-      .navigation li {
-        display: none;
-      }
-      .navigation a {
-        display: block;
-        padding: 0.75rem;
-        text-align: left;
-        text-decoration: none;
-        color: black;
-        font-weight: 700;
-      }
-      .navigation a:hover {
-        color: white;
-        background-color: black;
-      }
-
-      /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-    <ul class="navigation responsive">
-  */
-      .responsive li {
-        display: block;
-      }
-
-      /* Media Query for medium+  */
-      @media only screen and (min-width: 32.5em) {
-        .navigation {
-          display: flex;
-        }
-        .navigation li {
-          display: block; /* change state in small view */
-          flex: 1 1 auto;
-        }
-        .navigation a {
-          text-align: center;
-        }
-
-        .navigation li:first-child {
-          display: none;
-        }
-      }
-    </style>
   </head>
   <body>
     <nav>
       <ul class="navigation">
         <li><a class="ham" href="#">&#9776; Menu</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Feedback</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Contact</a></li>
+        <li>
+          <a href="/CIT-230-assignments/Weather-Site-Final/index.html">Home</a>
+        </li>
+        <li><a class="active" href="./contact.html">Contact</a></li>
+        <li><a href="./guides.html">Guides</a></li>
+        <li><a href="./reservations.html">Reservations</a></li>
       </ul>
     </nav>
 
-    <script>
-      const hambutton = document.querySelector(".ham");
-      const mainnav = document.querySelector(".navigation");
-
-      hambutton.addEventListener(
-        "click",
-        () => {
-          mainnav.classList.toggle("responsive");
-        },
-        false
-      );
-
-      /******************************************************
-Arrow Functions - es6 syntactically compact alternative to a regular function expression
-see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
-or
-https://www.w3schools.com/js/js_arrow_function.asp
-******************************************************/
-    </script>
+    <!-- <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+    >
+       WebFont.load({
+        google: {
+          families: [
+             'Alegreya SC', 'Alegreya', 'Alegreya Sans', 'Lora'
+          ]
+        }
+      });
+    </script> -->
+    <script src="../JS/toggle.js"></script>
+    <script src="../JS/toggle.js"></script>
   </body>
 </html>

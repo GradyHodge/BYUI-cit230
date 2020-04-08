@@ -444,78 +444,46 @@ body {
 }
 
 nav {
-  width: 100%;
-  background: orange;
+  margin: 0 auto;
+  max-width: 760px;
+  background-color: tomato;
 }
 
-ul {
-  width: 80%;
-  margin: 0 auto;
+.navigation {
+  list-style: none;
   padding: 0;
 }
 
-ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 20px;
-  margin-bottom: 10px;
-}
-
-ul li:hover {
-  background: #e91e63;
-}
-
-ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 25px;
-}
-
-.toggle {
-  width: 100%;
-  height: 68px;
-  padding: 10px 20px;
-  background-color: orangered;
-  text-align: right;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  color: white;
-  font-size: 44px;
+.navigation li:first-child {
   display: block;
 }
 
-ul {
-  width: 100%;
-}
-
-ul li {
-  display: block;
-  text-align: center;
-}
-
-.active {
-  display: block;
-}
-
-.waypoint a {
-  background-color: #eeeaea93;
-  font-size: 32px;
-}
-
-nav ul.hide {
+.navigation li {
   display: none;
 }
 
-#hamburger:hover {
-  color: #fff;
-  font-size: 2.2rem;
-  -webkit-transition: ease-in-out;
-  transition: ease-in-out;
-  -webkit-transform: scale(1%, 0);
-          transform: scale(1%, 0);
-  cursor: pointer;
+.navigation a {
+  display: block;
+  padding: 0.75rem;
+  text-align: left;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
 
+.navigation a:hover {
+  color: white;
+  background-color: black;
+}
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+<ul class="navigation responsive">
+*/
+.responsive li {
+  display: block;
+}
+
+/* Media Query for medium+  */
 .main__grid {
   display: -ms-grid;
   display: grid;
@@ -538,6 +506,10 @@ nav ul.hide {
 .main__card img {
   background-size: cover;
   overflow: hidden;
+}
+
+#main__weather {
+  background-color: white;
 }
 
 footer {
@@ -596,20 +568,23 @@ footer a {
 }
 
 @media only screen and (min-width: 650px) {
-  .toggle {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navigation li {
+    display: block;
+    /* change state in small view */
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+  }
+  .navigation a {
+    text-align: center;
+  }
+  .navigation li:first-child {
     display: none;
-  }
-  nav {
-    max-width: 1500px;
-    margin: 5px auto;
-  }
-  ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 20px;
-  }
-  ul li a {
-    font-size: 30px;
   }
 }
 
