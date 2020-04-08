@@ -6,96 +6,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Local Guides Dedicated to the best tours on the Salmon River"
+      content="Local Guides dedicated to the best adventures on the Salmon River"
     />
-    <title>Salmon River Adventure Guides</title>
+    <title>Salmon River Adventures</title>
 
     <link rel="stylesheet" href="./SCSS/styles.css" />
   </head>
   <body>
-    <!-- 1.  TODO: LOGO, TITLE, SLOGAN, CTA -->
+    <div class="grid__container">
+      <!-- CSS GRID CONTAINER - Header, Navbar, Main, Footer -->
+      <!-- CSS HEADER-SUBGRID -->
+      <!-- 1.  TODO: HEADER - LOGO, TITLE, SLOGAN, CTA -->
 
-    <header>
-      <img class="header__logo" src="" alt="Salmon Rivers Company Logo" />
-      <h1 class="header__company-name"></h1>
-      <h2 class="header__slogan"></h2>
-      <h3 class="cta">Book Fast</h3>
-    </header>
+      <header class="header-subgrid">
+        <img
+          class="header__logo"
+          src="./Images/logo-salmon-river-placeholder.jpeg"
+          alt="Salmon Rivers Company Logo"
+        />
+        <h1 class="header__company-name title">
+          Salmon River Adventures
+        </h1>
+        <h6 id="header__CTA">
+          Plan Ahead <br />
+          We Book <br />
+          Up Fast
+        </h6>
+        <h2 class="header__slogan">
+          Our river guides will show you the best rafting, kayaking, fishing
+          adventures you can ever find on the Salmon River.
+        </h2>
+      </header>
 
-    <!-- 2.  TODO: NAVBAR - GUIDE | CONTACT | RESERVATIONS | RESOURCES -->
+      <!-- 2.  TODO: NAVBAR - GUIDE | CONTACT | RESERVATIONS | RESOURCES -->
+      <!-- <div class="navbarContainer">
+         
+        <nav>
+          <input type="checkbox" id="nav-toggle" />
+          <label for="nav-toggle" class="burger-menu">
+            <img
+              src="./Images/hamburger-menu-round-white.png"
+              alt="round hamburger menu button"
+            />
+          </label>
+          <div class="left-menu">
+            <ul>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Guides</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Reserve</a></li>
+            </ul>
+          </div>
+          <a href="#" class="logo">Book Now</a>
+        </nav>
+      </div> -->
 
-    <div class="navbar">
-      <ul class="navbar__list">
-        <li class="navbar__list-item active">
-          <a href="#">HOME</a>
-        </li>
-        <li class="navbar__list-item">
-          <a href="#">Guides</a>
-        </li>
-        <li class="navbar__list-item">
-          <a href="#">Contact</a>
-        </li>
-        <li class="navbar__list-item">
-          <a href="#">Reservations</a>
-        </li>
-        <li class="navbar__list-item">
-          <a href="#">Resources</a>
-        </li>
-      </ul>
+      <div>
+        <nav>
+          <div>
+            <div class="toggle" onclick="toggleMenu()" id="hamburger">
+              &#9776;
+            </div>
+          </div>
+          <ul id="navUl" class="hide">
+            <li class="waypoint"><a href="">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Reservations</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <main>
+        <!-- main section includes 3. types, 4.weather, 5.selection matrix-->
+
+        <!-- 3.  TODO: 3 TYPES OF TOURS & ADDITIONAL ACTIVITIES-->
+        <div id="main__tours" class="main__grid">
+          <div class="main__card"><p>Rafting</p></div>
+          <div id="main__canoeing" class="main__card">Canoeing</div>
+          <div id="main__kayaking" class="main__card">Kayaking</div>
+          <div id="main__activities" class="main__card">
+            Additional Activities
+          </div>
+        </div>
+
+        <!-- 4.  TODO: CURRENT WEATHER -->
+        <div id="main__weather">
+          Current Weather 5 Day Forecast for Salmon River area
+        </div>
+
+        <!-- 5.  TODO: ADVENTURE SELECTION MATRIX -->
+        <div id="main__matrix">
+          Table Adventure Selection Matrix
+          <table>
+            instructions # lowest skill level of group member date range and
+            length of trip budget type of adventure (raft, canoe, kayak) add
+            services (fish gear, extra food, chef, pack-out) add
+            activities(fishing, fly fishing, survival training)
+          </table>
+        </div>
+      </main>
+
+      <!-- 6.  TODO: FOOTER AND SCRIPTS -->
+
+      <footer>
+        <div class="footer__left">
+        <p>Current Date: <span id="today"></span></p>
+        <p>
+          &copy; <span id="updateYear"></span>
+          | Grady W. Hodge | Texas |
+          <a href="https://www.byui.edu/online" target="_blank"
+            >BYUI Online Learning</a
+          >
+          <br />
+          <a href="https://www.byui.edu/online" target="_blank"></a>Terms of Use</a>
+          <span id="updates"
+            >Last Updated: <span id="fullDate"> </span> <span id="time"></span
+          ></span>
+        </p>
+      </div>
+      <div class="footer__right">
+        <ul>
+          <li>
+            <a  href="https://facebook.com/" target="_blank"
+              ><img
+              class="social-icons"
+                alt="Facebook icon"
+                src="./Images/social-006-round_facebook.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://skype.com/" target="_blank"
+              ><img
+                class="social-icons"
+                alt="Skype icon"
+                src="./Images/social-007_skype.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.linkedIn.com/in/gradywhodge/" target="_blank"
+              ><img
+                class="social-icons"
+                alt="LinkedIn icon"
+                src="./Images/social-011-round_linkedin.png"
+            /></a>
+          </li>
+          <li>
+            <a href="https://slack.com/" target="_blank"
+              ><img
+                class="social-icons"
+                alt="Slack icon"
+                src="./Images/social-054-round_slack.png"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      </footer>
+
+      <!-- end grid container -->
     </div>
-    <!-- close navbar -->
-
-    <main>
-      <!-- main section includes 3. types, 4.weather, 5.selection matrix-->
-
-      <!-- 3.  TODO: 3 TYPES OF TOURS & ADDITIONAL ACTIVITIES-->
-      <div id="main__tours">
-        <div class="main__card">Rafting</div>
-        <div class="main__card">Canoeing</div>
-        <div class="main__card">Kayaking</div>
-        <div class="main__card">Additional Activities</div>
-      </div>
-
-      <!-- 4.  TODO: CURRENT WEATHER -->
-      <div id="main__weather">
-        Current Weather Forecast for Salmon River area
-      </div>
-
-      <!-- 5.  TODO: ADVENTURE SELECTION MATRIX -->
-      <div id="main__matrix">
-        Adventure Selection Matrix
-        <table>
-          instructions # lowest skill level of group member date range and
-          length of trip budget type of adventure (raft, canoe, kayak) add
-          services (fish gear, extra food, chef, pack-out) add
-          activities(fishing, fly fishing, survival training)
-        </table>
-      </div>
-    </main>
-
-    <!-- 6.  TODO: FOOTER AND SCRIPTS -->
-
-    <footer></footer>
-
     <!-- SCRIPTS -->
 
-    <script>
-      web - font;
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+    >
+       WebFont.load({
+        google: {
+          families: [
+             'Alegreya SC', 'Alegreya', 'Alegreya Sans', 'Lora'
+          ]
+        }
+      });
     </script>
-    <script>
-      toggle;
-    </script>
-    <script>
-      lazy - load;
-    </script>
-    <script>
-      weather - api;
-    </script>
-    <script>
-      current - date;
-    </script>
-    <script>
-      guides only for guides page
-    </script>
+    <script src="JS/toggle.js"></script>
   </body>
 </html>

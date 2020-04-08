@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Alegreya+Sans:wght@700&family=Alegreya:wght@500&display=swap");
 
 @import "normalize";
+
+@import "variables";
+
 @import "base";
 
-@media only screen and (min-width: 649px) {
+@media only screen and (min-width: 650px) {
   @import "medium";
 } /* end Medium media Query */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 950px) {
   @import "large";
 } /* END LARGE MEDIA QUERY*/

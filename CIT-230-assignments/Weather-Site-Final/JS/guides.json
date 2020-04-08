@@ -1,0 +1,52 @@
+{
+  "guides": [
+    {
+      "name": "Paul Bunyon",
+      "picture": "",
+      "cert": "white water K2",
+      "exp": "20 years",
+      "email": "paul@salmonriver.com",
+      "bio": "Paul Bunyon is a mighty man with 20 yrs exp on the Salmon River"
+    },
+    {
+      "name": "Davy Crocket",
+      "picture": "",
+      "cert": "white water 5",
+      "exp": "100 years",
+      "email": "coonskinhat@salmonriver.com",
+      "bio": "Davy Crocket is the king of the wild frontier and in charge of Survial Camp courses."
+    },
+    {
+      "name": "Jack Sparrow",
+      "picture": "",
+      "cert": "white water 3?",
+      "exp": "20 years",
+      "email": "skallywag@salmonriver.com",
+      "bio": "Captain Jack Sparrow's specialty is canoeing and fly fishing."
+    },
+    {
+      "name": "Michael Phelps",
+      "picture": "",
+      "cert": "white water 33",
+      "exp": "10 years",
+      "email": "goldmedals@salmonriver.com",
+      "bio": "Guides all 3 types of boating adventures from raging rapids, to an easy fly fishing from your canoe trip."
+    },
+    {
+      "name": "One-Eyed Willy",
+      "picture": "",
+      "cert": "white water 545",
+      "exp": "70 years",
+      "email": "goonies@salmonriver.com",
+      "bio": "If buried treasure ye do seek, join his crew, but beware booby traps, that's what I said, booby traps."
+    },
+    {
+      "name": "John Cena",
+      "picture": "",
+      "cert": "white water 2",
+      "exp": "2 years",
+      "email": "goonies@salmonriver.com",
+      "bio": "After a lucrative acting career, John has retired and stays fit rowing your lazy bums down river."
+    }
+  ]
+}

@@ -1,27 +1,29 @@
+/////////////////////////////////////////////
 // COLOR SCHEME
 
-$primaryColorDark: ""; //dark green like on google site planning page
-$primaryBackground: ""; //offwhite
-$primaryBackgroundDark: ""; //alternative box colors
+$primary-color-dark: "#205067"; //darkslategray like on google site planning page
+$primary-bgc-light: "#f5f5f5"; //offwhite
+$primary-bgc-Dark: "#4094ba"; //steel blue for alternative box colors
 
-$primaryAccent: ""; //salmon pink color
-$primaryCTA: ""; //dark safety orange
+$primary-accent: "#f74747"; //salmon pink color
+$primary-cta: "#f16c07"; //dark safety orange
 
-$headingColor: ""; //dark green
-$bulletPointColor: ""; //less dark green
-$paragrahpColor: ""; // light bluegreen lik on google site planning document
+$heading-color: "green"; //dark green
+$bullet-point-color: ""; //less dark green
+$paragrahp-color: ""; // light bluegreen lik on google site planning document
 
+//////////////////////////////////////////////
 // TYPOGRAPHY FS - FONT SIZE  FF- FONT FAMILY
 
-$titleFS: ""; //title font size
-$headingFS: ""; //heading font size for h1-h3
-$bulletFS: ""; //sub heading bullet point font size
-$paragraphFS: ""; // text font size
+$title-fs: "64px"; //title font size
+$heading-fs: "32px"; //heading font size for h1-h3
+$bullet-fs: "16px"; //sub heading bullet point font size
+$paragraph-fs: "14px"; // text font size
 
-$titleFF: ""; // title font family
-$headingFF: ""; //heading font family for h1-h6
-$bulletFF: ""; //sub heading bullet point font family
-$paragraphFF: ""; // text font family
+$title-ff: "Alegreya SC"; // title font family
+$heading-ff: "Alegreya"; //heading font family for h1-h6
+$bullet-ff: "Alegreya"; //sub heading bullet point font family
+$paragraph-ff: "Alegreya Sans"; // text font family
 
 // <style>
 // @import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Alegreya+Sans:wght@700&family=Alegreya:wght@500&display=swap');

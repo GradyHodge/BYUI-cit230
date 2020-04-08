@@ -1,0 +1,28 @@
+// MEDIUM MEDIA QUERY    IMPORTED INTO STYLES.SCSS
+
+////////////////////////////////////
+// NAVBAR
+////////////////////////////////////
+
+.toggle {
+  display: none;
+}
+
+nav {
+  max-width: 1500px;
+  margin: 5px auto;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+}
+
+ul li a {
+  font-size: 30px;
+}
+
+///////////////////////////////////
+// MAIN
+///////////////////////////////////

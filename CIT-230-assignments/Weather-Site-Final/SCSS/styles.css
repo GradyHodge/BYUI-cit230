@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@700&family=Alegreya+Sans:wght@700&family=Alegreya:wght@500&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -339,6 +340,246 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+body {
+  background-color: #dfdfdf;
+  margin: 1rem;
+}
+
+.grid__container {
+  margin: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.title {
+  font-size: "64px";
+  font-family: "Alegreya SC";
+}
+
+.heading {
+  font-size: "32px";
+  font-family: "Alegreya";
+}
+
+.bullet {
+  font-size: "16px";
+  font-family: "Alegreya";
+}
+
+.text {
+  font-size: "14px";
+  font-family: "Alegreya Sans";
+}
+
+.cta {
+  font-size: 32px;
+  font-family: "Alegreya Sans";
+  color: "#f16c07";
+}
+
+.header-subgrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+}
+
+.header__logo {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  height: 50px;
+  width: 50px;
+  padding: 2px;
+  border: 2px solid blue;
+  border-radius: 50%;
+}
+
+.header__company-name {
+  margin: 0;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+}
+
+#header__CTA {
+  font-size: 16px;
+  color: #f74747;
+}
+
+.header__slogan {
+  min-width: 300px;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+  color: #720909;
+}
+
+nav {
+  width: 100%;
+  background: orange;
+}
+
+ul {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+ul li:hover {
+  background: #e91e63;
+}
+
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.toggle {
+  width: 100%;
+  height: 68px;
+  padding: 10px 20px;
+  background-color: orangered;
+  text-align: right;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: white;
+  font-size: 44px;
+  display: block;
+}
+
+ul {
+  width: 100%;
+}
+
+ul li {
+  display: block;
+  text-align: center;
+}
+
+.active {
+  display: block;
+}
+
+.waypoint a {
+  background-color: #eeeaea93;
+  font-size: 32px;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+#hamburger:hover {
+  color: #fff;
+  font-size: 2.2rem;
+  -webkit-transition: ease-in-out;
+  transition: ease-in-out;
+  -webkit-transform: scale(1%, 0);
+          transform: scale(1%, 0);
+  cursor: pointer;
+}
+
+.main__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.main__card {
+  border: 3px solid blue;
+  min-width: 400px;
+  min-height: 400px;
+  margin-top: 5px;
+  background-color: white;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  justify-items: space-around;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  background-color: #116466;
+  color: #fff;
+  padding: 1rem;
+  max-width: 98%;
+  margin: 1rem 0;
+  border-radius: 20px;
+  line-height: 1.5;
+}
+
+footer a {
+  color: lightblue;
+  font-size: 1.3rem;
+  vertical-align: baseline;
+}
+
+.footer__left {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  justify-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  text-align: start;
+}
+
+.footer__right {
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.social-icons {
+  width: 35px;
+}
+
+@media only screen and (min-width: 650px) {
+  .toggle {
+    display: none;
+  }
+  nav {
+    max-width: 1500px;
+    margin: 5px auto;
+  }
+  ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+  }
+  ul li a {
+    font-size: 30px;
+  }
 }
 
 /* end Medium media Query */
