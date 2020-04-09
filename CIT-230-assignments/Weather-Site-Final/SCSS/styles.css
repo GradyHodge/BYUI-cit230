@@ -586,6 +586,9 @@ footer a {
 }
 
 @media only screen and (min-width: 650px) {
+  .header__company-name {
+    font-size: 50px;
+  }
   .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
