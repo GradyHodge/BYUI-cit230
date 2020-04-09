@@ -1,5 +1,6 @@
 //JS for Fake Guide JSON info
 
+//trying to get anything to work as a starting point
 ///////////////////////////////////////////////////////////////////////////////
 $(document).ready(function () {
   $.getJSON("./guides.json", function (result) {

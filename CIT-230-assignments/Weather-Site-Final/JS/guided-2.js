@@ -20,13 +20,16 @@ const requestURL = "./guides.json";
 // JavaScript object format.  Initially we will test to see if we get a valid, parsed response using
 // a console.table() method to output the results to the console.
 
-fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    console.table(jsonObject); // temporary checking for valid response and data parsing
-    const guides = jsonObject["guides"];
+$(document).ready(function () {
+  $.getJSON("./guides.json", function (result) {
+    var guidesObj = result;
+// fetch(requestURL)
+//   .then(function (response) {
+//     return response.json();
+//   })
+//   .then(function (jsonObject) {
+//     console.table(jsonObject); // temporary checking for valid response and data parsing
+     guidesObj.guides = jsonObject["guides"];
     for (let i = 0; i < guides.length; i++) {
       let card = document.createElement("section");
       let name = document.createElement("h2");
