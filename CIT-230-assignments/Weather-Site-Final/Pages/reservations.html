@@ -10,7 +10,7 @@
     />
     <title>Salmon River Adventures</title>
 
-    <link rel="stylesheet" href="./SCSS/styles.css" />
+    <link rel="stylesheet" href="../SCSS/styles.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
@@ -21,12 +21,13 @@
       <!-- 1.  TODO: HEADER - LOGO, TITLE, SLOGAN, CTA -->
 
       <header class="header-subgrid mask">
-        <a href="/index.html"><img
-          class="header__logo"
-          src="./Images/logo-salmon-river-placeholder.jpeg"
-          alt="Salmon Rivers Company Logo"
+        <a href="../index.html"
+          ><img
+            class="header__logo"
+            src="../Images/logo-salmon-river-adventures-100w.png"
+            alt="Salmon Rivers Company Logo"
         /></a>
-        
+
         <h1 class="header__company-name title">
           Salmon River Adventures
         </h1>
@@ -46,13 +47,16 @@
         <nav>
           <ul class="navigation">
             <li><a class="ham" href="#">&#9776; Menu</a></li>
-            <li><a class="active" href="../Weather-Site-Final/index.html">Home</a></li>
-            <li><a href="./Pages/contact.html">Contact</a></li>
-            <li><a href="./Pages/guides.html">Guides</a></li>
-            <li><a href="./Pages/resources.html">Reservations</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Pages/contact.html">Contact</a></li>
+            <li><a href="../Pages/guides.html">Guides</a></li>
+            <li>
+              <a class="active" href="../Pages/reservations.html"
+                >Reservations</a
+              >
+            </li>
           </ul>
         </nav>
-       
       </div>
 
       <main>
@@ -63,147 +67,81 @@
           <div class="main__card mask">
             <p>Rafting</p>
             <img
-              src="./Images/rafting-triumph-400w.jpg"
+              src="../Images/rafting-triumph-400w.jpg"
               alt="youth group in rubber raft navigating raging white water rapids"
             />
           </div>
 
           <div id="main__canoeing" class="main__card">
             <p>Canoeing</p>
-            <img src="./Images/rafting-triumph-400w.jpg" alt="" />
+            <img src="../Images/rafting-triumph-400w.jpg" alt="" />
           </div>
           <div id="main__kayaking" class="main__card">
             <p>Kayaking</p>
-            <img src="./Images/rafting-triumph-400w.jpg" alt="" />
+            <img src="../Images/rafting-triumph-400w.jpg" alt="" />
           </div>
           <div id="main__activities" class="main__card">
             <p>Additional Activities</p>
-            <img src="./Images/rafting-triumph-400w.jpg" alt="" />
+            <img src="../Images/rafting-triumph-400w.jpg" alt="" />
           </div>
-        </div>
-
-    <!-- //////////////////////////////////////////////////////////// -->
-
-    <header>
-      <h1>Contact us for Guide Availability</h1>
-    </header>
-    <main>
-      <div class="guide-cards"></div>
-    </main>
-
-    <!-- //////////////////////////////////////////////////////////// -->
-    <form action="thanks.html">
-      <label for="fullName">Name:</label><br />
-      <input type="text" id="Name" name="Name"><br />
-
-      <label for="phoneNumber">Phone:</label><br />
-      <input type="tel" id="phoneNumber" name="phoneNumber"><br />
-
-      <label for="email">Email:</label><br />
-      <input type="email" id="email" name="email"><br />
-     
-      <label for="adventures">Boating Tours</label><br />
-      <select id="tours" name="tours">
-          <option value="boating">Rafting</option>
-          <option value="boating">Kayaking</option>
-          <option value="boating">Canoeing</option>
-      </select>
-      <label for="adventures">Additional Activities</label><br />
-      <select id="addOns" name="addOns">
-          <option value="activities">trout fishing</option>
-          <option value="actvities">fly fishing</option>
-          <option value="activities">Survival Skills</option>
-      </select>
-      <br />
-      <label for="participants">Size of Party</label><br />
-      <input type="number" id="camplers" name="participants"><br />
-    
-      <label for="comment">Questions or Comments:</label><br />
-      <textarea id="comment" name="comment" rows="7"></textarea><br /><br />
-      <input type="submit" value="Submit"><br /><br />
-
-      <label for="date">Start Date:</label><br />
-      <input type="date" id="date" name="date"><br /><br />
-  </form>
-
-
-        <!-- 5.  TODO: ADVENTURE SELECTION MATRIX -->
-        <div id="main__matrix">
-          <h2>Table Adventure Selection Matrix</h2>
-          <h3>How to plan an adventure that is just right for your group.</h3>
-          <table>
-            instructions # lowest skill level of group member date range and
-            length of trip budget type of adventure (raft, canoe, kayak) add
-            services (fish gear, extra food, chef, pack-out) add
-            activities(fishing, fly fishing, survival training)
-          </table>
         </div>
       </main>
+      <!-- //////////////////////////////////////////////////////////// -->
+
+      <section>
+        <h2>Contact us for Guide Availability</h2>
+      </section>
+      <section>
+        <h2>Guides</h2>
+        <div class="guide-cards"></div>
+      </section>
+
+      <!-- //////////////////////////////////////////////////////////// -->
+      <form action="thanks.html">
+        <label for="Name">Name:</label><br />
+        <input type="text" id="Name" name="Name" /><br />
+
+        <label for="phone">Phone:</label><br />
+        <input type="tel" id="phone" name="phone" /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+
+        <label for="tours">Boating Tours</label><br />
+        <select id="tours" name="tours">
+          <option value="tours">Rafting</option>
+          <option value="tours">Kayaking</option>
+          <option value="tours">Canoeing</option>
+        </select>
+        <label for="addOns">Additional Activities</label><br />
+        <select id="addOns" name="addOns">
+          <option value="addOns">trout fishing</option>
+          <option value="addOns">fly fishing</option>
+          <option value="addOns">Survival Skills</option>
+        </select>
+        <br />
+        <label for="campers">Size of Party</label><br />
+        <input type="number" id="campers" name="campers" /><br />
+
+        <label for="comment">Questions or Comments:</label><br />
+        <textarea id="comment" name="comment" rows="7"></textarea><br /><br />
+        <input type="submit" value="Submit" /><br /><br />
+
+        <label for="date">Start Date:</label><br />
+        <input type="text" id="date" name="date" /><br /><br />
+      </form>
+
+      <!-- 5.  TODO: ADVENTURE SELECTION MATRIX -->
+      <div id="main__matrix">
+        <h2>Table Adventure Selection Matrix</h2>
+        <h3>How to plan an adventure that is just right for your group.</h3>
+        add a table instructions # lowest skill level of group member date range
+        and length of trip budget type of adventure (raft, canoe, kayak) add
+        services (fish gear, extra food, chef, pack-out) add activities(fishing,
+        fly fishing, survival training)
+      </div>
 
       <!-- 6.  TODO: FOOTER AND SCRIPTS -->
-
-      <footer>
-        <div class="footer__left">
-          <p>Current Date: <span id="today"></span></p>
-          <p>
-            &copy; <span id="updateYear"></span>
-            | Grady W. Hodge | Texas |
-            <a href="https://www.byui.edu/online" target="_blank"
-              >BYUI Online</a
-            >
-            
-            ><br />
-            <span id="updates"
-              >Last Updated: <span id="fullDate"> </span> <span id="time"></span
-            ></span>
-            <br />
-            <a href="https://www.byui.edu/online" target="_blank"
-              >Terms of Use</a
-          </p>
-        </div>
-        <div class="footer__right">
-          <div class="flex">
-            <ul>
-              <li>
-                <a href="https://facebook.com/" target="_blank"
-                  ><img
-                    class="social-icons"
-                    alt="Facebook icon"
-                    src="./Images/social-006-round_facebook.png"
-                /></a>
-              </li>
-              <li>
-                <a href="https://skype.com/" target="_blank"
-                  ><img
-                    class="social-icons"
-                    alt="Skype icon"
-                    src="./Images/social-007_skype.png"
-                /></a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a
-                  href="https://www.linkedIn.com/in/gradywhodge/"
-                  target="_blank"
-                  ><img
-                    class="social-icons"
-                    alt="LinkedIn icon"
-                    src="./Images/social-011-round_linkedin.png"
-                /></a>
-              </li>
-              <li>
-                <a href="https://slack.com/" target="_blank"
-                  ><img
-                    class="social-icons"
-                    alt="Slack icon"
-                    src="./Images/social-054-round_slack.png"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
 
       <!-- end grid container -->
     </div>

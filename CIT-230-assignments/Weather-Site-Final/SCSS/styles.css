@@ -363,7 +363,7 @@ body {
 }
 
 .mask {
-  background-color: rgba(0, 0, 0, 0.509);
+  background-color: rgba(70, 194, 252, 0.509);
 }
 
 .title {
@@ -408,25 +408,27 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 80px;
+  margin: 10px;
   padding: 2px;
-  border: 2px solid blue;
+  border: 2px solid rgba(0, 51, 255, 0.378);
   border-radius: 50%;
 }
 
 .header__company-name {
-  margin: 0;
+  margin: 10px 0 5px 5px;
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-column: 2/4;
+  color: #4b084b;
 }
 
 #header__CTA {
   font-size: 20px;
-  color: #492005;
+  color: #8c180f;
 }
 
 .header__slogan {
@@ -446,7 +448,7 @@ body {
 nav {
   margin: 0 auto;
   max-width: 760px;
-  background-color: tomato;
+  background-color: rgba(161, 33, 11, 0.899);
 }
 
 .navigation {
@@ -467,13 +469,20 @@ nav {
   padding: 0.75rem;
   text-align: left;
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: 700;
+  font-family: "Alegreya";
+  font-size: 30px;
+}
+
+.navigation .ham a {
+  font-size: 35px;
+  color: white;
 }
 
 .navigation a:hover {
-  color: white;
-  background-color: black;
+  color: #cfaeae;
+  background-color: #4b084b;
 }
 
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.

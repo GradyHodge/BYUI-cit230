@@ -2,7 +2,7 @@
   "guides": [
     {
       "name": "Paul Bunyon",
-      "picture": "",
+      "picture": "Images/river-guide-paul-bunyon-400w.jpg",
       "cert": "white water K2",
       "exp": "20 years",
       "email": "paul@salmonriver.com",
@@ -10,7 +10,7 @@
     },
     {
       "name": "Davy Crocket",
-      "picture": "",
+      "picture": "Images/river-guide-davy-crocket-400w.jpg",
       "cert": "white water 5",
       "exp": "100 years",
       "email": "coonskinhat@salmonriver.com",
@@ -18,7 +18,7 @@
     },
     {
       "name": "Jack Sparrow",
-      "picture": "",
+      "picture": "Images/river-guide-swirling-eddy-400w.jpg",
       "cert": "white water 3?",
       "exp": "20 years",
       "email": "skallywag@salmonriver.com",
@@ -26,7 +26,7 @@
     },
     {
       "name": "Jaques Costou",
-      "picture": "",
+      "picture": "Images/river-guide-jaque-custou-400w.jpg",
       "cert": "white water 33",
       "exp": "10 years",
       "email": "goldmedals@salmonriver.com",
@@ -34,7 +34,7 @@
     },
     {
       "name": "One-Eyed Willy",
-      "picture": "",
+      "picture": "Images/river-guide-mr-miyagi-400w.jpg",
       "cert": "white water 545",
       "exp": "70 years",
       "email": "goonies@salmonriver.com",
@@ -42,7 +42,7 @@
     },
     {
       "name": "John Cena",
-      "picture": "",
+      "picture": "Images/river-guide-captain-caveman-400w.jpg",
       "cert": "white water 2",
       "exp": "2 years",
       "email": "goonies@salmonriver.com",
