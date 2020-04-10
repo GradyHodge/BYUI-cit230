@@ -42,7 +42,7 @@
       </header>
 
       <!-- 2.  TODO: NAVBAR - GUIDE | CONTACT | RESERVATIONS | RESOURCES -->
-      <div class="navbarContainer">
+      <div class="navbarContainer mask">
         <nav>
           <ul class="navigation">
             <li><a class="ham" href="#">&#9776; Menu</a></li>
@@ -55,7 +55,7 @@
        
       </div>
 
-      <main>
+      <main class="mask">
         <!-- main section includes 3. types, 4.weather, 5.selection matrix-->
 
         <!-- 3.  TODO: 3 TYPES OF TOURS & ADDITIONAL ACTIVITIES-->
@@ -84,7 +84,8 @@
 
         <!-- 4.  TODO: CURRENT WEATHER -->
         <div id="main__weather">
-          <div> <h4> Current Weather in Riggins, ID</h4></div>
+          <div class="weather__left">
+          <div> <h3> Current Weather in Riggins, ID</h3></div>
             
             <!-- Temp, Humidity, Visibility, Icons, Wind Speed, Wind Chill -->
 
@@ -97,6 +98,11 @@
             <!-- Humidity -->
             Humidity: <span id="humidity">missing data</span>%
             </p>
+            <p>
+              River Status: Adventurous!
+            </p>
+          </div>
+          <div class="weather__right">
             <p>
             <!-- Visibility  -->
             Visibility: <span id="current">&#x1F324;</span>
@@ -111,6 +117,7 @@
             <!-- Chill -->
             Wind Chill: <span id="Chill">missing data</span>&#0176 F
             </p>
+          </div>
             </div>
         </div>
 
@@ -148,7 +155,7 @@
           </p>
         </div>
         <div class="footer__right">
-          <div class="flex">
+          <div class="footer__social-icons">
             <ul>
               <li>
                 <a href="https://facebook.com/" target="_blank"
