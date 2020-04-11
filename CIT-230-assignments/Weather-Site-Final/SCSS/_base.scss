@@ -393,7 +393,7 @@ nav {
 
 footer {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-row: 2fr 1fr;
 
   justify-content: center;
   justify-items: center;
@@ -412,12 +412,12 @@ footer a {
   vertical-align: baseline;
 }
 
-.footer__left {
-  grid-column: 1/3;
+.footer__top {
+  grid-row: 1;
 }
 
-.footer__right {
-  grid-column: 3/4;
+.footer__bottom {
+  grid-row: 2;
 }
 
 .footer__social-ul ul {
